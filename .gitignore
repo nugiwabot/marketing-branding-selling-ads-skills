@@ -1,0 +1,15 @@
+# Dependencies & build
+node_modules/
+dist/
+.cache/
+*.log
+
+# Environment & local config
+.env
+.env.local
+.DS_Store
+Thumbs.db
+
+# Output artifacts
+output/
+outputs/
