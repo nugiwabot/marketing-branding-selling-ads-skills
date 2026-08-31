@@ -1,6 +1,6 @@
-# 🚀 Unified AI Skills Suite: Branding, Marketing, & Selling
+# 🚀 Marketing Branding Selling Ads Skills: Unified AI Suite
 
-> **All-In-One AI Growth Engine** yang menggabungkan framework marketing AI kelas dunia menjadi satu sistem komprehensif untuk kebutuhan **Branding**, **Marketing Strategy & Growth**, **Content & Copywriting**, serta **Sales & Conversion** (termasuk akselerasi industri properti, real estate, rukos, B2B, dan E-commerce).
+> **All-In-One AI Growth Engine** yang menggabungkan framework marketing AI kelas dunia menjadi satu sistem komprehensif untuk kebutuhan **Branding**, **Marketing Strategy & Growth**, **Content & Copywriting**, **Selling & Conversion**, serta **Paid Ads Automation** (termasuk akselerasi industri properti, real estate, rukos, B2B, dan E-commerce).
 
 ---
 
@@ -134,7 +134,7 @@ Akses aturan dan framework melalui `AGENTS.md` dan folder `.agents/skills/`.
 
 ## 📄 Lisensi & Kredit
 
-Repositori ini disatukan dan dikurasi oleh **[nugiwabot](https://github.com/nugiwabot)** untuk keperluan akselerasi branding, marketing, dan selling. Seluruh kredit metodologi dan fondasi awal ditujukan kepada:
+Repositori ini disatukan dan dikurasi oleh **[nugiwabot](https://github.com/nugiwabot/marketing-branding-selling-ads-skills)** untuk keperluan akselerasi branding, marketing, selling, dan ads automation. Seluruh kredit metodologi dan fondasi awal ditujukan kepada:
 - **Eric Siu** ([marketing-os-starter](https://github.com/ericosiu/marketing-os-starter))
 - **Product Marketing Alliance** ([product-marketing-skills](https://github.com/pmalliance/product-marketing-skills))
 - **Jing** ([tech-marketing-framework](https://github.com/j1ngg/tech-marketing-framework))
