@@ -1,12 +1,12 @@
 # 🚀 Unified AI Skills Suite: Branding, Marketing, & Selling
 
-> **All-In-One AI Growth Engine** yang menggabungkan 3 repositori marketing AI terbaik di dunia menjadi satu sistem komprehensif untuk kebutuhan **Branding**, **Marketing Strategy & Growth**, **Content & Copywriting**, serta **Sales & Conversion**.
+> **All-In-One AI Growth Engine** yang menggabungkan framework marketing AI kelas dunia menjadi satu sistem komprehensif untuk kebutuhan **Branding**, **Marketing Strategy & Growth**, **Content & Copywriting**, serta **Sales & Conversion** (termasuk akselerasi industri properti, real estate, rukos, B2B, dan E-commerce).
 
 ---
 
 ## 🏛️ Sumber & Fondasi Framework
 
-Repositori ini merupakan hasil kurasi dan integrasi dari 3 framework terdepan:
+Repositori ini merupakan hasil kurasi dan integrasi dari berbagai framework terdepan:
 
 1. **[ericosiu/marketing-os-starter](https://github.com/ericosiu/marketing-os-starter)** *(Eric Siu - Single Grain)*
    - Sistem Operasi Agensi AI: 4 Agen Terspesialisasi (Orchestrator, Researcher, Strategist, Copywriter), Memory Architecture, formula hook konversi, dan structured handoffs.
@@ -14,12 +14,14 @@ Repositori ini merupakan hasil kurasi dan integrasi dari 3 framework terdepan:
    - Keahlian Product Marketing tingkat lanjut: Positioning April Dunford (*Obviously Awesome*), Segmentation-Targeting-Positioning (STP), Go-To-Market (GTM), Voice of Customer (VOC), Battlecards, dan Pricing Packaging.
 3. **[j1ngg/tech-marketing-framework](https://github.com/j1ngg/tech-marketing-framework)** *(Jing / Tech Marketing Engine)*
    - Eksekusi konten B2B/B2C, SEO & AEO (AI Engine Optimization), Paid Ads (Meta, Google, LinkedIn), Sales Decks otomatis via python-pptx, Product Hunt launch sprint, dan Autoresearch (optimasi prompt otomatis Karpathy).
+4. **2026 Multi-Platform Ads Automation Engine**
+   - Arsitektur operasional AI, guardrails anti-banned, matriks limitasi teknis, dan integrasi MCP/REST API untuk Google Ads (PMax, VBB), Meta Ads (Advantage+, CAPI), TikTok Ads (Smart+, Symphony AI), dan LinkedIn Ads (ABM, Buying Committee).
 
 ---
 
-## 📑 Direktori 30 Skills Siap Pakai
+## 📑 Direktori 31 Skills Siap Pakai
 
-Semua skill tersedia dalam format standar SKILL.md dan didukung penuh oleh **Antigravity IDE**, **Claude Code**, dan **Codex**.
+Semua skill tersedia dalam format standar `SKILL.md` dan didukung penuh oleh **Antigravity IDE**, **Claude Code**, dan **Codex**.
 
 ### 🎨 1. Branding & Positioning
 | Skill | Deskripsi & Kegunaan |
@@ -27,7 +29,7 @@ Semua skill tersedia dalam format standar SKILL.md dan didukung penuh oleh **Ant
 | **messaging-positioning** | Framework positioning & messaging mendalam berbasis April Dunford (*Obviously Awesome*). |
 | **messaging-positioning-workshop** | Workshop interaktif Socratic Q&A untuk memandu tim merumuskan positioning & diferensiasi brand. |
 | **positioning-map** | Generator 2x2 competitive positioning maps untuk menemukan whitespace pasar & diferensiasi. |
-| **rand-voice** | Panduan voice & tone brand, vocabulary bank, do's & don'ts karakter komunikasi. |
+| **brand-voice** | Panduan voice & tone brand, vocabulary bank, do's & don'ts karakter komunikasi. |
 | **customer-language-bank** | Bank repositori Voice of Customer (VOC) untuk menangkap frasa autentik calon pembeli. |
 | **claim-check** | Audit keabsahan klaim pemasaran, verifikasi bukti empiris, dan penguatan trust/social proof. |
 | **message-consistency-check** | Audit konsistensi pesan brand di seluruh channel pemasaran (Web, Ads, Sosmed, Email). |
@@ -43,15 +45,15 @@ Semua skill tersedia dalam format standar SKILL.md dan didukung penuh oleh **Ant
 | **win-loss-reasons** | Analisis menang-kalah transaksi (win/loss reviews) untuk memperbaiki penawaran dan produk. |
 | **editorial-calendar** | Perencanaan kalender konten dengan rasio 70/20/10 (Educational, Product, Reactive content). |
 | **producthunt-launch** | Panduan sprint peluncuran Product Hunt 6 minggu (tagline, maker comment, vote velocity, timeline). |
-| **iral-launch-playbook** | Taktik peluncuran produk viral, waitlist loops, hype building, dan referral multipliers. |
+| **viral-launch-playbook** | Taktik peluncuran produk viral, waitlist loops, hype building, dan referral multipliers. |
 | **launch-roundup** | Pipeline otomatis rilis fitur: Ringkasan changelog → Pengumuman Slack → Blog post → Postingan LinkedIn & Karusel. |
-| **utoresearch** | Mesin optimasi prompt & skill otonom berbasis metodologi Andrej Karpathy. |
+| **autoresearch** | Mesin optimasi prompt & skill otonom berbasis metodologi Andrej Karpathy. |
 
 ### ✍️ 3. Content Creation & Conversion Copywriting
 | Skill | Deskripsi & Kegunaan |
 | :--- | :--- |
 | **copywriting** | Mesin copywriting konversi tinggi karya Eric Siu (Hooks, Direct Response, PAS/AIDA/4C frameworks). |
-| **log** | Generator artikel blog mendalam standar SEO & AEO (Answer Engine Optimization) lengkap dengan Schema JSON-LD. |
+| **blog** | Generator artikel blog mendalam standar SEO & AEO (Answer Engine Optimization) lengkap dengan Schema JSON-LD. |
 | **social-posts** | Penulisan pos media sosial berkinerja tinggi untuk LinkedIn, X/Twitter, Instagram, dan TikTok. |
 | **social-content** | Batch generator konten media sosial dan hook bank untuk menjaga konsistensi posting harian. |
 | **email** | Generator newsletter, email pengumuman fitur, update produk, dan konten editorial email. |
@@ -61,26 +63,27 @@ Semua skill tersedia dalam format standar SKILL.md dan didukung penuh oleh **Ant
 ### 💼 4. Selling, Sales Enablement & Paid Acquisition
 | Skill | Deskripsi & Kegunaan |
 | :--- | :--- |
-| **ds** | Copywriting iklan berbayar multi-platform (Meta Ads, Google Search/PMax, LinkedIn Ads, TikTok Ads). |
-| **ds-auditor** | Audit performa akun iklan digital, deteksi ad fatigue, perhitungan CPA/ROAS, dan rekomendasi perbaikan. |
+| **multi-platform-ads-automation** | **(NEW 2026)** Otak operasional AI & otomatisasi kampanye ads 4 platform (Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads), decision trees bidding, alokasi budget, pre-flight JSON schemas, anti-banned guardrails, dan MCP Server tools. |
+| **ads** | Copywriting iklan berbayar multi-platform (Meta Ads, Google Search/PMax, LinkedIn Ads, TikTok Ads). |
+| **ads-auditor** | Audit performa akun iklan digital, deteksi ad fatigue, perhitungan CPA/ROAS, dan rekomendasi perbaikan. |
 | **sales-deck** | Generator slide presentasi sales B2B otomatis ke format PPTX (python-pptx) sesuai identitas brand. |
 | **objection-library** | Bank penanganan keberatan sales (*objection handling*), skrip tanggapan harga, trust, dan timing. |
 | **pricing-packaging** | Strategi penetapan harga, tiering paket, value metric alignment, dan optimasi monetisasi. |
-| **sset-reviewer** | QA gatekeeper sebelum materi publish: cek akurasi data, nada bahasa, kepatuhan, dan daya konversi. |
+| **asset-reviewer** | QA gatekeeper sebelum materi publish: cek akurasi data, nada bahasa, kepatuhan, dan daya konversi. |
 | **skill-builder** | Meta-skill untuk mendesain, menguji, dan membuat skill AI baru sesuai kebutuhan spesifik bisnis Anda. |
 
 ---
 
 ## 🤖 Tim Agen AI Khusus (Multi-Agent Team)
 
-Dalam folder gents/ dan .claude/agents/, tersedia agen spesialis:
+Dalam folder `.agents/` dan `.claude/agents/`, tersedia agen spesialis:
 
 - **mos-orchestrator**: Pemimpin tim marketing AI. Menganalisis permintaan, memilih agen/skill yang tepat, dan memastikan kualitas output.
 - **mos-researcher**: Spesialis riset audiens, ekstraksi Voice-of-Customer, tren industri, dan intelijen kompetitor.
 - **mos-strategist**: Arsitek strategi GTM, positioning, angle kampanye, dan penetapan KPI pemasaran.
 - **mos-copywriter**: Copywriter eksekutor spesialis direct-response, headline hook, dan naskah iklan persuasif.
-- **ds-auditor**: Analis kesehatan kampanye iklan berbayar dan optimasi biaya akuisisi (CAC/CPL).
-- **sset-reviewer**: Editor ketat yang memastikan setiap materi siap tayang tanpa cacat logika atau klaim lemah.
+- **ads-auditor**: Analis kesehatan kampanye iklan berbayar dan optimasi biaya akuisisi (CAC/CPL).
+- **asset-reviewer**: Editor ketat yang memastikan setiap materi siap tayang tanpa cacat logika atau klaim lemah.
 - **how-they-market**: Agen riset yang membongkar strategi pemasaran kompetitor secara real-time.
 
 ---
@@ -88,28 +91,29 @@ Dalam folder gents/ dan .claude/agents/, tersedia agen spesialis:
 ## 🛠️ Cara Penggunaan
 
 ### 1. Di Google Antigravity IDE
-Skill otomatis terbaca dari folder .agents/skills/ atau skills/. Anda dapat langsung memanggil skill terkait dalam percakapan atau membiarkan asisten mengaktifkannya secara otomatis.
+Skill otomatis terbaca dari folder `.agents/skills/` atau `skills/`. Anda dapat langsung memanggil skill terkait dalam percakapan atau membiarkan asisten mengaktifkannya secara otomatis.
 
 ### 2. Di Claude Code
 Skill dan agen dapat dipanggil langsung menggunakan slash command:
-`ash
+```bash
 /messaging-positioning
 /copywriting
+/multi-platform-ads-automation
 /ads
 /sales-deck
 /go-to-market
-`
+```
 
 ### 3. Di Cursor / Codex
-Akses aturan dan framework melalui AGENTS.md dan folder .agents/skills/.
+Akses aturan dan framework melalui `AGENTS.md` dan folder `.agents/skills/`.
 
 ---
 
 ## 📁 Struktur Repositori
 
-`	ext
+```text
 ├── .agents/                    # Kompatibilitas Antigravity / Cursor / Codex
-│   ├── skills/                 # 30 Direktori skill mandiri (SKILL.md)
+│   ├── skills/                 # 31 Direktori skill mandiri (SKILL.md)
 │   └── product-marketing-context.md
 ├── .claude/                    # Kompatibilitas Claude Code
 │   ├── agents/                 # Definisi tim agen multi-role
@@ -124,7 +128,7 @@ Akses aturan dan framework melalui AGENTS.md dan folder .agents/skills/.
 ├── AGENTS.md                   # Panduan orkestrasi multi-agen
 ├── CLAUDE.md                   # Panduan master instruksi & routing
 └── README.md                   # Dokumentasi utama repositori
-`
+```
 
 ---
 
