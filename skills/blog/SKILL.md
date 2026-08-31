@@ -614,55 +614,68 @@ Output format:
 
 ---
 
-## SEO and AEO Requirements
+## ⚡ 2026 SEO, AEO & GEO Algorithmic Intelligence
 
-Apply these to every blog post:
+Apply these official 2026 search engine and AI retrieval constraints to every blog post:
 
-### Metadescription
-- Under 160 characters
-- Include target keyword naturally
-- Convey the value proposition
-- End with implicit or explicit CTA
+### 1. Title Tag & H1 Separation
+- **`<title>` Tag (Search Engines & AI Crawlers):**
+  - **Hard Limit:** Exactly **50 to 60 characters** (maximum 580–600 pixels).
+  - Front-load primary keyword within the first 30 characters.
+  - Brand suffix appended at end: `— [Brand]`.
+  - Never allow title truncation with ellipses (`...`) in SERPs.
+- **`<h1>` Tag (On-Page Editorial Header):**
+  - Can be longer and more descriptive (60 to 85 characters) to maximize reader engagement and emotional hook.
 
-### TLDR Section
-- Place immediately after the title
-- 2 to 4 sentences maximum
-- Must stand alone as a complete summary
-- This is what LLMs will extract for AI-generated answers
+### 2. Meta Description
+- **Hard Limit:** Exactly **140 to 155 characters**.
+- Must contain primary keyword + direct value proposition + subtle action trigger.
+- Displays fully across mobile and desktop without truncation.
 
-### FAQ Section
-- 3 to 5 questions per post
-- Phrase questions exactly as users would search them
-- Start each answer with a direct response, then elaborate
-- Use "What is", "How to", "Why does", "Can I" patterns
+### 3. URL Slug Standards
+- 3 to 5 lowercase words separated by hyphens (e.g., `artikel/dampak-tol-cisumdawu-properti-jatinangor`).
+- No stop words, numbers (unless year/data-critical), or special characters.
 
-### Schema Markup Suggestions
+### 4. Google E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)
+- **Author Byline:** Verified author name with specific domain role/title (e.g., `Tim Analis Finansial GREN Property`).
+- **ISO 8601 Timestamps:** Explicit `datePublished` and `dateModified` in metadata and Schema markup.
+- **Evidence & Primary Data:** Every factual or financial claim must include numerical grounding (tables, percentages, verified data anchors). Avoid vague, unsupported assertions.
 
-| Blog Type | Recommended Schema |
-|-----------|-------------------|
-| Feature announcement | Article + FAQPage |
-| Product launch | Article + FAQPage + Product |
-| Thought leadership | Article + FAQPage |
-| Cookbook/tutorial | HowTo + FAQPage |
-| News analysis | Article + FAQPage |
-| Report conversion | Article + FAQPage |
+### 5. Answer Engine Optimization (AEO & GEO for Gemini, ChatGPT & Perplexity)
+- **The 100-Word Direct Answer Rule (TLDR / Key Takeaways):**
+  - Position a dedicated Key Takeaways box immediately below the H1 and metadata.
+  - Summarize the exact answer to the title's core question in 2–4 concise sentences (<100 words).
+  - LLMs extract this block directly for AI Overviews and answer syntheses.
+- **Semantic Data Tables:**
+  - Structure all comparisons and numerical breakdowns using semantic HTML `<table>` with `<thead>` and `<tbody>`.
+  - LLMs prioritize table structures for comparative multi-dimensional queries.
+- **FAQ Section (Q&A Natural Language Processing):**
+  - 3 to 5 high-intent conversational questions phrased as users speak/search.
+  - Start each answer with a direct, unambiguous one-sentence resolution before elaborating.
 
-Output schema suggestion at the end of the post:
+### 6. Schema Markup (Multi-Graph JSON-LD)
+Every published post must include a valid `<script type="application/ld+json">` with a `@graph` array combining:
+- `@type: "Article"` (headline, image, author, publisher, dates)
+- `@type: "BreadcrumbList"` (hierarchical navigation)
+- `@type: "FAQPage"` (question and acceptedAnswer pairs)
 
-```
-**Schema markup:** [Type] schema recommended. Key properties: [list]
-```
+| Blog Type | Required Schemas |
+|---|---|
+| Feature Announcement | `Article` + `FAQPage` + `BreadcrumbList` |
+| Product Launch | `Article` + `Product` + `FAQPage` + `BreadcrumbList` |
+| Thought Leadership / Educational Guide | `Article` + `FAQPage` + `BreadcrumbList` |
+| Real Estate / Local Commercial Guide | `Article` + `RealEstateListing` / `LocalBusiness` + `FAQPage` |
+| Technical Tutorial / Cookbook | `HowTo` + `FAQPage` + `BreadcrumbList` |
 
-### Internal Linking
-- 3 to 5 contextual links per 1,000 words
-- Links must be relevant to the surrounding content
-- Fetch pages from user's specified domain to find real URLs
-- Format as: `[anchor text](URL)` with natural anchor text
+### 7. Core Web Vitals & Visual Asset Standards
+- All hero and in-body images: Modern WebP format, 16:9 ratio, lightweight (<150KB), explicit `width`/`height` attributes, and keyword-rich descriptive `alt` tags.
 
-Output internal linking recommendations:
+### 8. AI Search Bot Directives (`robots.txt` & Open Access)
+- Ensure explicit crawler permissions for modern generative AI engines: `Google-Extended`, `GPTBot`, `OAI-SearchBot`, `PerplexityBot`, and `ClaudeBot`.
 
-```
-**Internal links to add:**
+### 9. Internal Linking Architecture
+- 3 to 5 contextual links per 1,000 words.
+- Use descriptive keyword anchor text (e.g., `[analisis rental yield rumah kost](...)` instead of `[klik di sini](...)`).
 - Link to [page title](URL) in the [section name] section
 - Link to [page title](URL) when mentioning [topic]
 ```
