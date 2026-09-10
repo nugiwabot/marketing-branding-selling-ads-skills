@@ -332,22 +332,26 @@ For broad strategic requests, produce a structured strategic diagnosis using:
 
 `schemas/strategic-diagnosis.json.template`
 
-The handoff should preserve, at minimum:
+The handoff is the machine-readable source of truth for downstream specialists. Keep the human-readable synthesis adaptive, but ensure the structured handoff preserves the decision context needed for routing and execution.
+
+At minimum, populate or explicitly mark unknown:
 - business objective and decision required
 - business context
-- facts, observations, inferences, hypotheses, benchmarks, and unknowns
+- evidence classifications
+- confirmed, provisional, and unverified assumptions
 - research gaps and research plan
-- frameworks selected and their purpose
+- selected frameworks and their purpose
 - root causes, opportunities, bottlenecks, and strategic tensions
 - customer/market and competitive implications
 - offer/brand implications
 - channel/media classification and selection logic
 - prioritized decisions
-- recommended workstreams and specialist skills
+- recommended workstreams
+- the specific specialist job-to-be-done for each routed specialist
 - measurement approach
 - risks and confidence
 
-The structured handoff is the source of truth for downstream specialists. Do not make downstream agents reconstruct the diagnosis from prose.
+Downstream specialists must preserve the structured diagnosis unless new evidence materially changes it. They must explicitly flag conflicts between their playbook/defaults and the diagnosis. Material conflicts or new evidence that changes the diagnosis return to Strategic Intelligence for synthesis before execution.
 
 ## 14. Output Standard
 
