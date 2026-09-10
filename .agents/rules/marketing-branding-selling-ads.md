@@ -39,7 +39,7 @@ For narrow execution requests where the strategic direction is already known (fo
 
 ## 🎯 Mandatory Global Skill Routing
 
-After strategic diagnosis when applicable, the agent MUST proactively reference and apply only the corresponding specialist skills from the `skills/` directory that are relevant to the task:
+After strategic diagnosis when applicable, the agent MUST proactively reference and apply only the corresponding specialist skills from the `skills/` directory that are relevant to the task. For narrow execution requests, direct specialist routing remains allowed when strategic direction is already known.
 
 ### 1. Paid Ads & Campaign Automation
 - **Multi-Platform Ad Automation**: Activate `multi-platform-ads-automation` when planning, auditing, validating, or automating campaigns across **Google Ads** (PMax, Demand Gen, VBB, Consent Mode v2), **Meta Ads** (Advantage+, CAPI, Creative is Targeting), **TikTok Ads** (Smart+, Symphony AI, 3-sec Hook Rate), and **LinkedIn Ads** (Predictive Audiences, ABM, Buying Committee).
@@ -78,7 +78,11 @@ After strategic diagnosis when applicable, the agent MUST proactively reference 
 ## 🏢 Domain-Specific Context: Real Estate & Property (Yanproland / Rukos)
 
 When the user works on real estate, rukos (rumah kost/ruko komersial), housing developments, or property investment marketing:
-- **Lead Generation**: Prioritize high-intent Google Search (keyword: investasi properti, rukos mahasiswa, ruko komersial), Meta Ads Lead Gen Forms with WhatsApp API integration, and TikTok Ads vertical walkthroughs.
-- **Audience Profiling**: Target parents/investors, high-net-worth individuals, business owners, and passive income seekers.
-- **Value Proposition**: Lead with ROI, passive income yield, strategic location (kampus/pusat bisnis), fully furnished units, and professional property management.
-- **Policy Compliance**: Strictly avoid guaranteed return claims without disclaimers (e.g., replace "Pasti Untung 100%" with "Potensi Yield Hingga X%*").
+
+- Treat property-specific audience, positioning, channel, media, offer, and performance assumptions as **context to investigate**, not universal defaults.
+- Do not automatically prioritize Google Search, Meta, TikTok, WhatsApp, or any other channel. Strategic Intelligence should determine channel roles from evidence about customer behavior, intent, demand, funnel role, economics, competition, measurement, and operational feasibility.
+- Do not assume parents, investors, high-net-worth individuals, business owners, or passive-income seekers are the correct audience. Research or use verified first-party context to determine the relevant segment.
+- Do not assume ROI, yield, passive-income, location, furnishing, management, or other property value propositions. Use only verified product facts and evidence-supported positioning.
+- For investment/property claims, never guarantee returns or fabricate financial outcomes. Any potential-yield or return statement must be based on verified inputs and clearly framed with appropriate assumptions/disclaimers.
+
+Property context can inform hypotheses and research questions, but it must not silently override the Executive Strategic Intelligence Layer.
