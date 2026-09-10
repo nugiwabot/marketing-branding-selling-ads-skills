@@ -1,0 +1,99 @@
+{
+  "request": {
+    "summary": "",
+    "business_objective": "",
+    "decision_required": "",
+    "scope": []
+  },
+  "business_context": {
+    "product_or_service": "",
+    "business_model": "",
+    "target_customer": "",
+    "market": "",
+    "known_constraints": [],
+    "available_assets": []
+  },
+  "evidence_map": {
+    "facts": [],
+    "observations": [],
+    "inferences": [],
+    "hypotheses": [],
+    "benchmarks": [],
+    "unknowns": [],
+    "research_gaps": []
+  },
+  "research_plan": [
+    {
+      "question": "",
+      "why_it_matters": "",
+      "priority": "high",
+      "sources_or_methods": []
+    }
+  ],
+  "frameworks_selected": [
+    {
+      "framework": "",
+      "purpose": ""
+    }
+  ],
+  "diagnosis": {
+    "root_causes": [],
+    "opportunities": [],
+    "bottlenecks": [],
+    "strategic_tensions": []
+  },
+  "customer_and_market": {
+    "segments": [],
+    "needs_or_jobs": [],
+    "decision_criteria": [],
+    "journey_implications": []
+  },
+  "competitive_landscape": {
+    "direct_competitors": [],
+    "alternatives": [],
+    "differentiation_gaps": []
+  },
+  "offer_and_brand": {
+    "value_proposition": "",
+    "positioning_implications": [],
+    "offer_implications": []
+  },
+  "channel_and_media": {
+    "primary": [],
+    "supporting": [],
+    "experimental": [],
+    "not_recommended": [],
+    "selection_logic": []
+  },
+  "priorities": [
+    {
+      "priority": "",
+      "reason": "",
+      "evidence_confidence": "",
+      "impact": "",
+      "feasibility": "",
+      "urgency": "",
+      "dependencies": []
+    }
+  ],
+  "recommended_workstreams": [
+    {
+      "workstream": "",
+      "objective": "",
+      "specialist_skills": [],
+      "deliverables": [],
+      "measurement": []
+    }
+  ],
+  "measurement": {
+    "business_outcomes": [],
+    "leading_indicators": [],
+    "guardrail_metrics": [],
+    "review_cadence": ""
+  },
+  "risks_and_unknowns": [],
+  "confidence": {
+    "overall": "",
+    "reasoning": ""
+  }
+}
