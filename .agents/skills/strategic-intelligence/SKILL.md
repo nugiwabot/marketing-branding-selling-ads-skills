@@ -295,9 +295,32 @@ Examples:
 
 The strategic layer decides WHICH specialist is needed and WHY.
 
-## 12. Output Standard
+## 12. Structured Handoff
 
-For a broad strategic request, structure the result around:
+For broad strategic requests, produce a structured strategic diagnosis using:
+
+`schemas/strategic-diagnosis.json.template`
+
+The handoff should preserve, at minimum:
+- business objective and decision required
+- business context
+- facts, observations, inferences, hypotheses, benchmarks, and unknowns
+- research gaps and research plan
+- frameworks selected and their purpose
+- root causes, opportunities, bottlenecks, and strategic tensions
+- customer/market and competitive implications
+- offer/brand implications
+- channel/media classification and selection logic
+- prioritized decisions
+- recommended workstreams and specialist skills
+- measurement approach
+- risks and confidence
+
+The structured handoff is the source of truth for downstream specialists. Do not make downstream agents reconstruct the diagnosis from prose.
+
+## 13. Output Standard
+
+For a broad strategic request, present a human-readable synthesis around:
 
 1. Executive diagnosis
 2. Business context and assumptions
