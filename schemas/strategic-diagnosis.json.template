@@ -22,6 +22,11 @@
     "unknowns": [],
     "research_gaps": []
   },
+  "assumption_status": {
+    "confirmed": [],
+    "provisional": [],
+    "unverified": []
+  },
   "research_plan": [
     {
       "question": "",
@@ -81,10 +86,17 @@
       "workstream": "",
       "objective": "",
       "specialist_skills": [],
+      "specialist_job_to_be_done": "",
       "deliverables": [],
       "measurement": []
     }
   ],
+  "handoff_controls": {
+    "source_of_truth": "strategic-intelligence",
+    "specialist_must_preserve_diagnosis": true,
+    "specialist_must_flag_conflicts": true,
+    "return_to_strategy_if_new_evidence_changes_diagnosis": true
+  },
   "measurement": {
     "business_outcomes": [],
     "leading_indicators": [],
