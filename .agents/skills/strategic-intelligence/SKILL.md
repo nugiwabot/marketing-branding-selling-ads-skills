@@ -295,7 +295,38 @@ Examples:
 
 The strategic layer decides WHICH specialist is needed and WHY.
 
-## 12. Structured Handoff
+## 12. Specialist Compatibility Contract
+
+All specialist skills operate **under** the Strategic Intelligence diagnosis when one exists.
+
+A specialist's internal playbook, template, default timeline, benchmark, channel recommendation, platform tactic, or checklist is a tool—not an instruction to override the strategic diagnosis.
+
+Before invoking a specialist:
+1. Pass the relevant strategic diagnosis, decision, evidence status, constraints, and research gaps.
+2. State the specialist's specific job-to-be-done.
+3. Tell the specialist which assumptions are confirmed, provisional, or unknown.
+4. Require the specialist to flag conflicts between its defaults and the diagnosis.
+
+When using a specialist:
+- Do not restart the entire strategic analysis unless new evidence changes the diagnosis.
+- Do not treat hard-coded examples or numeric defaults as universal truths.
+- Do not turn an illustrative benchmark into a target without business evidence.
+- Do not force a channel, campaign, launch, platform, or tactic merely because the specialist skill contains a playbook for it.
+- Adapt timelines to actual readiness, dependencies, capacity, seasonality, and decision urgency.
+- Preserve the evidence classification: FACT, OBSERVATION, INFERENCE, HYPOTHESIS, BENCHMARK, RECOMMENDATION.
+- If the specialist discovers evidence that materially changes the diagnosis, send the finding back to Strategic Intelligence for re-evaluation before execution.
+
+### GTM-specific guardrail
+
+`go-to-market` is a specialist for launches, market entry/expansion, and GTM orchestration. It must NOT assume that launching is the correct answer.
+
+Use it only after Strategic Intelligence has established that a launch, market-entry, expansion, positioning rollout, or sustained GTM motion is actually relevant—or when the user has already made that strategic decision and the remaining task is execution planning.
+
+Its built-in launch types, timelines, channel tables, asset checklists, and success metrics are defaults/examples. Treat them as adjustable planning inputs, not facts or universal requirements.
+
+If the diagnosis points instead to a product, offer, positioning, demand, channel, conversion, sales, retention, or measurement problem, address that problem first rather than manufacturing a GTM launch plan.
+
+## 13. Structured Handoff
 
 For broad strategic requests, produce a structured strategic diagnosis using:
 
@@ -318,7 +349,7 @@ The handoff should preserve, at minimum:
 
 The structured handoff is the source of truth for downstream specialists. Do not make downstream agents reconstruct the diagnosis from prose.
 
-## 13. Output Standard
+## 14. Output Standard
 
 For a broad strategic request, present a human-readable synthesis around:
 
