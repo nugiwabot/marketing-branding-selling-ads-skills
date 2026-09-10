@@ -43,6 +43,18 @@ Never fabricate business-specific numbers, market size, customer counts, perform
 
 Numerical examples, suggested sample sizes, timelines, tier ratios, KPI thresholds, and performance targets are not universal truths unless verified as genuine hard constraints. Treat them as benchmarks, examples, or hypotheses and state which.
 
+## Competitive Intelligence Controls
+
+When using `competitive-intelligence`:
+- Competitor claims about pricing, features, positioning, customers, market presence, growth, traffic, funding, headcount, strategic direction, strengths, weaknesses, or channel activity must be treated as **unverified until supported by an appropriate source**.
+- Distinguish **competitor-stated claims** from independently verified facts, customer-reported experience, analyst/review evidence, and internal win/loss evidence.
+- Do not infer competitor effectiveness merely from the existence of a tactic or channel. Presence is evidence of activity, not evidence of performance.
+- Do not use fixed competitor counts such as "top 3-5" as a universal rule. Select the competitive set based on the decision, market structure, customer overlap, threat, and available evidence.
+- Do not treat fixed monitoring cadences (for example weekly/monthly/quarterly) as mandatory defaults. Cadence should follow volatility, strategic importance, signal frequency, research cost, and decision needs.
+- Do not treat fixed research timing or sample-size guidance as universal. Adapt win/loss research timing and depth to the buying cycle, accessibility of participants, recency of the decision, and the question being answered.
+- Do not publish competitor comparison claims, testimonials, customer outcomes, pricing, migration timelines, or superiority statements unless they are supported, attributable, or explicitly marked as unknown/hypothesis.
+- When evidence conflicts, preserve the conflict and confidence level rather than forcing a single narrative.
+
 ## Specialist Feedback Loop
 
 If specialist research or execution produces evidence that changes the diagnosis, do not continue optimizing inside the specialist's original assumption. Return the new evidence and implications to Strategic Intelligence for synthesis.
