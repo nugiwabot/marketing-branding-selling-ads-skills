@@ -4,12 +4,45 @@ This rule is mandatory across all conversations whenever the USER asks questions
 
 ---
 
+## 🧠 Executive Strategic Intelligence Layer
+
+For broad, ambiguous, cross-functional, or decision-oriented requests, the agent MUST use `strategic-intelligence` as the first diagnostic layer before routing to specialist skills.
+
+This applies to requests involving:
+- business or marketing strategy
+- strategic audit or diagnosis
+- market, customer, competitor, or industry analysis
+- GTM or growth strategy
+- brand or positioning strategy
+- offer, pricing, packaging, or value proposition decisions
+- customer journey, funnel, conversion, or sales diagnosis
+- channel or media strategy
+- integrated marketing planning
+- campaign strategy when the underlying problem or objective is unclear
+- SPV/manager-level planning, prioritization, roadmap, KPI, or decision support
+
+The strategic layer must:
+1. Clarify the business objective and decision to be made.
+2. Identify what is known, unknown, assumed, and required as evidence.
+3. Determine what research is needed before making strategic claims.
+4. Select only the frameworks relevant to the diagnosed problem.
+5. Select only the specialist skills required for the next stage.
+6. Diagnose root causes rather than treating symptoms as causes.
+7. Evaluate channels/media from customer behavior, intent, economics, funnel role, measurement, and operational feasibility.
+8. Produce prioritized recommendations and measurable next actions.
+
+Do NOT mechanically activate every specialist skill. Strategic Intelligence is the decision layer; specialist skills are domain executors.
+
+For narrow execution requests where the strategic direction is already known (for example, writing a caption, email, ad copy, sales script, or editing a supplied asset), the agent MAY bypass Strategic Intelligence and route directly to the appropriate specialist skill.
+
+---
+
 ## 🎯 Mandatory Global Skill Routing
 
-Whenever a user request touches any of the following domains, the agent MUST proactively reference and apply the corresponding skills from the `skills/` directory:
+After strategic diagnosis when applicable, the agent MUST proactively reference and apply only the corresponding specialist skills from the `skills/` directory that are relevant to the task:
 
 ### 1. Paid Ads & Campaign Automation
-- **Multi-Platform Ad Automation**: ALWAYS activate `multi-platform-ads-automation` when planning, auditing, validating, or automating campaigns across **Google Ads** (PMax, Demand Gen, VBB, Consent Mode v2), **Meta Ads** (Advantage+, CAPI, Creative is Targeting), **TikTok Ads** (Smart+, Symphony AI, 3-sec Hook Rate), and **LinkedIn Ads** (Predictive Audiences, ABM, Buying Committee).
+- **Multi-Platform Ad Automation**: Activate `multi-platform-ads-automation` when planning, auditing, validating, or automating campaigns across **Google Ads** (PMax, Demand Gen, VBB, Consent Mode v2), **Meta Ads** (Advantage+, CAPI, Creative is Targeting), **TikTok Ads** (Smart+, Symphony AI, 3-sec Hook Rate), and **LinkedIn Ads** (Predictive Audiences, ABM, Buying Committee).
 - **Ad Copywriting**: Activate `ads` for creating multi-variant ad headlines, descriptions, and creative matrices.
 - **Account Health & Auditing**: Activate `ads` / ad audit checklists to diagnose ad fatigue, CPA/ROAS decay, and budget reallocation.
 
