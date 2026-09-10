@@ -1,97 +1,116 @@
 ---
 name: win-loss-reasons
 description: >
-  Synthesize why you win and lose deals from your full set of sales call
-  transcripts, deal notes, and CRM close reasons at once. Separates what buyers
-  said out loud from what the pattern of evidence actually shows, and ties every
-  finding back to the calls behind it. Use when you have a pile of win/loss
-  material nobody has had time to read across, when sales keeps losing to the
-  same competitor and no one can explain why, or when you need win/loss findings
-  you can defend in front of leadership. Triggers: "why are we losing deals,"
-  "win/loss analysis," "read all these call transcripts," "what's the real
-  reason we lost," "win rate against [competitor]."
+  Synthesize why deals are won, lost, or abandoned from sales transcripts,
+  deal notes, and CRM evidence. Separate buyer-stated reasons from evidence-backed
+  patterns and surface implications for strategy, offer, positioning, messaging,
+  sales, and product decisions.
 ---
 
 # Win & Loss Reasons
 
+## Strategic Boundary
+
+For broad or decision-oriented requests, consume the `strategic-intelligence` diagnosis when available.
+
+This skill owns **evidence synthesis from deal outcomes**. It does not independently decide that the root problem is sales, pricing, messaging, product, positioning, or competition.
+
+Its findings are feedback evidence that can update Strategic Intelligence.
+
 ## What this does
 
-Reads your entire body of deal evidence in one pass and reports the real reasons
-you win and lose, ranked by how often each reason actually shows up - not by how
-loud it was in the last deal anyone remembers.
+Read the available body of deal evidence and identify recurring patterns without confusing buyer statements with proven causes.
 
-The output separates two things that usually get blurred together:
+Separate:
 
-- **What buyers said** - the reason the buyer or rep named for the deal ("too
-  expensive," "went with a competitor").
-- **What the pattern shows** - what many deals read together reveal was really
-  going on (e.g. price was named, but the transcripts show the loss tracked to a
-  missing integration raised in the second call).
+- **Buyer-stated reason** — what the buyer or CRM explicitly recorded.
+- **Observed evidence** — what the transcript, notes, or deal history directly shows.
+- **Pattern** — a recurring observation across multiple relevant deals.
+- **Inference** — a reasoned interpretation of the pattern.
+- **Hypothesis** — a plausible explanation that still needs validation.
 
-What buyers said is where teams stop. What the pattern shows is where the useful
-work is. This skill is built to get you to the second one.
+A repeated reason is evidence of recurrence, not automatically proof of causality.
 
-## Why this is a Fable-recommended job
+## Evidence to Gather
 
-Real win/loss lives across dozens of long transcripts. The value only appears
-when you can hold all of them at once and compare across the set - a reason that
-shows up in one deal is an anecdote, the same reason across nine deals is a
-finding. Claude Fable 5 can hold that whole evidence base in a single run and
-cross-reference it, which is exactly what this needs.
+Use whatever relevant evidence exists:
 
-**If Fable is not available or the budget is spent:** run on your everyday model
-in batches. Feed 8-10 transcripts per batch, produce a partial reason table for
-each batch using the format below, then paste those partial tables back in and
-ask for a merged, de-duplicated final table. You lose some cross-deal nuance but
-keep the method.
-
-## Evidence to gather first
-
-Point the skill at as much of this as you have. More material makes the ranking
-more trustworthy.
-
-- Sales call and demo transcripts (Gong, Fireflies, Zoom, notes)
-- Closed-won and closed-lost deals with any recorded reason
+- Sales call and demo transcripts
+- Closed-won, closed-lost, and no-decision deals
 - CRM opportunity notes and stage history
-- Deal desk / forecast call notes
-- Any post-mortem write-ups
+- Deal desk / forecast notes
+- Post-mortems
+- Customer or prospect feedback
 
-If you have a `.agents/product-marketing-context.md` file from the Product
-Marketing pack, read it first for ICP, competitors, and positioning so findings
-are framed against your actual market.
+If context files exist, use them to understand the market and positioning, but do not let a static positioning document override deal evidence.
 
 ## Process
 
-1. Confirm the evidence set and the time window (e.g. last two quarters). Note
-   how many deals and transcripts are included - the report will state this.
-2. Read every source. For each deal, capture: outcome (won/lost/no-decision),
-   the reason it was recorded as won or lost on, and the moments in the
-   transcript that reveal what actually moved the deal.
-3. Cluster reasons across all deals. Merge duplicates that use different words
-   for the same thing.
-4. For each reason, separate what buyers said from what the pattern shows, and
-   count how many deals it appears in.
-5. Flag competitor-driven losses and group them by competitor.
-6. Produce the report.
+1. Define the decision question and scope.
+2. Confirm the available evidence set and time window.
+3. Read the relevant sources and preserve source traceability.
+4. For each deal, capture outcome, stated reason, observed evidence, and relevant turning points.
+5. Cluster equivalent reasons without erasing meaningful differences.
+6. Distinguish frequency from causal confidence.
+7. Separate competitor involvement from competitor effectiveness.
+8. Identify patterns, contradictions, and important exceptions.
+9. Translate evidence into implications, clearly labeling inference and hypothesis.
+10. Return strategic implications to Strategic Intelligence when they could change positioning, offer, pricing, channel, sales process, product, or other strategic decisions.
 
-## Output format
+Do not assume that the most frequent objection is the most important issue. Consider deal value, stage, segment, fit, and evidence quality.
 
-A single document with:
+## Competitor Analysis
 
-- **Summary** - deals analyzed, time window, headline win reasons and loss
-  reasons.
-- **Loss reasons table** - reason | said or shown by pattern | number of deals |
-  representative quote with source | so-what for PMM.
-- **Win reasons table** - same columns.
-- **Competitor breakdown** - for each competitor you lost to: pattern, the point
-  in the deal it turned, and the counter that appears to work.
-- **What this changes** - the two or three positioning, messaging, or enablement
-  moves the evidence supports.
+A competitor being named in a lost deal proves that the competitor was part of the decision context. It does not prove that the competitor won because of price, product superiority, brand strength, or any other specific factor unless the evidence supports that conclusion.
 
-## The evidence standard
+Do not invent competitor claims, pricing, market share, win rates, or product weaknesses.
 
-Every reason in the tables must cite at least one specific source - the deal
-name, call date, or transcript line it came from. If a claim cannot be traced to
-the material, it does not go in the report; it goes in a short "worth checking"
-list at the end. Do not infer reasons the evidence does not support, and do not
-smooth a messy finding into a clean one.
+## Output Format
+
+# Win & Loss Analysis
+
+## Scope & Evidence
+- Deals analyzed
+- Time window
+- Evidence sources
+- Important data limitations
+
+## Executive Findings
+Separate:
+- strongest evidence-backed patterns
+- important buyer-stated reasons
+- high-value contradictions or exceptions
+- hypotheses worth testing
+
+## Loss Reasons
+| Reason | Buyer said | Observed evidence | Deals affected | Confidence | Sources |
+|---|---|---|---:|---|---|
+
+## Win Reasons
+| Reason | Buyer said | Observed evidence | Deals affected | Confidence | Sources |
+|---|---|---|---:|---|---|
+
+## Competitor Patterns
+For each competitor involved:
+- what the evidence shows
+- where the decision changed
+- what remains unknown
+- whether a counter appears supported by evidence
+
+## What This May Change
+Separate recommendations by domain:
+- positioning / messaging
+- offer / pricing
+- sales process / enablement
+- product / experience
+- channel / acquisition
+
+Label recommendations as **RECOMMENDATION** and connect them to evidence.
+
+## Worth Checking
+List plausible explanations that are not sufficiently supported yet.
+
+## Evidence Standard
+Every material finding must be traceable to source material. If a claim cannot be traced, do not present it as a finding.
+
+Never fabricate quotes, counts, win rates, causes, competitor behavior, or customer motivations.
