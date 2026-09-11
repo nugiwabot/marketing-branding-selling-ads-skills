@@ -1,220 +1,160 @@
 ---
 name: social-posts
-description: Generates social media posts from source content. Produces brand or personal posts for LinkedIn or Twitter, tailored to each channel's audience and format.
+description: Generates social media posts from validated source content and strategic context. Produces brand or personal posts for supported platforms, tailored to audience, objective, and format.
 autoload: false
 ---
 
 # Social Media Post Generator
 
-This skill transforms source content (blog posts, announcements, product launches) into social media posts.
+This skill is an **execution layer**. It transforms validated source content and, when available, a structured strategic handoff into platform-specific social posts.
 
-## Step 1: Channel Selection
+## Strategic Boundary
 
-Before generating any content, ask the user:
+For broad, ambiguous, cross-functional, audit, planning, growth, business, branding, marketing, channel/media, or decision-oriented requests, Strategic Intelligence is the diagnostic entry point.
 
-**Platform:**
-- LinkedIn
-- Twitter/X
-- Both
+For narrow execution requests where the objective, audience, positioning/message, channel role, and desired action are already established, proceed directly.
 
-**Account type:**
-- Brand (company voice)
-- Personal (individual voice)
-- Both
+When a strategic handoff exists, preserve:
+- business objective and decision
+- diagnosed bottleneck/opportunity
+- audience and journey stage
+- positioning/message direction
+- channel role
+- constraints
+- measurement intent
 
-Wait for the user to answer before proceeding. Do not assume.
+Do not independently decide that social media is the strategic solution. Do not silently replace the upstream diagnosis with a social-content objective.
 
----
+## Inputs
 
-## Step 2: Gather Inputs
+Use existing context first. Ask only for genuinely missing execution inputs such as:
+- platform/surface
+- brand vs personal account
+- source content
+- author context where relevant
+- attribution/disclosure
+- verified CTA destination
 
-Once channel is selected, ask the user for the source content:
+Do not ask the user to restate information already contained in the strategic handoff or supplied source.
 
-**How would you like to provide the source content?**
-- File path (e.g., /docs/announcements/feature-launch.md)
-- URL to fetch
-- Paste directly
+## Evidence Discipline
 
-Wait for the user to provide the source before proceeding.
+Classify material claims as appropriate:
+- **FACT** — directly supported by source/evidence
+- **OBSERVATION** — directly observed pattern
+- **INFERENCE** — reasoned interpretation
+- **HYPOTHESIS** — unvalidated proposition
+- **BENCHMARK** — external comparison with source/context
+- **RECOMMENDATION** — creative/execution choice
 
-Then confirm you have the remaining required inputs:
+Never invent statistics, customer stories, testimonials, competitor claims, performance results, or affiliations.
 
-1. **Author context (for personal posts):** Who is posting? Do they have personal involvement or affiliation to disclose?
-2. **Brand/company name (for brand posts):** For attribution
-3. **Key link:** The URL to include in the post
+Concrete numbers may be used as hooks when verified. Do not invent precision merely to make a post stronger.
 
-If any required inputs are missing, ask before generating.
+Do not treat statements such as "this format performs best," "the algorithm rewards X," or "this posting time is optimal" as universal facts without current evidence. Treat them as contextual benchmarks or testable hypotheses.
 
----
+## Channel Selection
 
-## Step 3: Generate Posts
+Use the channel specified by the user or established by strategy. If a strategic decision about channel is not yet established and the request is broad, route to Strategic Intelligence instead of choosing a channel from stereotype.
 
-Generate only the posts requested. Follow the rules for the selected channel(s) below.
+## LinkedIn
 
----
+Do not assume the audience is automatically VPs, CTOs, Heads of Engineering, executives, or budget holders. Use the actual audience definition from strategy/source.
 
-## Channel Rules
+Tailor tone and depth to the audience and objective. A direct link, hashtags, emojis, post length, and CTA style are execution choices governed by current platform behavior and established brand conventions, not universal performance laws.
 
-### LinkedIn
+For personal posts, preserve genuine first-person experience and disclose relevant affiliation. Never fabricate personal involvement.
 
-LinkedIn reaches VPs, Heads of Engineering, CTOs. Budget holders, not builders. They care about business outcomes, risk, and strategic implications.
+## Twitter / X
 
-**Brand LinkedIn:**
-- Lead with the problem or market insight, not the product
-- Focus on business impact and governance implications
-- Use concrete numbers (time saved, cost reduced, risk mitigated)
-- Structure: Problem → Impact → Solution exists → CTA
-- **Never put a direct link in the post body.** End with "Full story in comments." or "Link in comments." and instruct the user to drop the URL as the first comment after publishing.
-- Length: 150 to 250 words
-- No hashtags in body (optional 2 to 3 at end if company standard)
-- No emojis
-- No subject line or greeting
+Use a single post or thread according to source complexity and objective. Do not assume technical content requires a thread or that a specific hook guarantees reach.
 
-**Personal LinkedIn:**
-- Lead with personal experience ("I built", "I learned", "I discovered")
-- Include the narrative arc: problem, action, insight
-- Surface personal voice throughout
-- Disclose affiliations explicitly when discussing your own product ("Full disclosure: I helped build X")
-- First person throughout
-- Structure: Personal hook → Story → Insight → Disclosure (if applicable) → CTA
-- **Never put a direct link in the post body.** End with "Full story in comments." or "Link in comments." and instruct the user to drop the URL as the first comment after publishing.
-- Length: 200 to 350 words
-- No hashtags
-- No emojis
+Respect the platform's current documented constraints when material. Do not make claims about algorithmic distribution without evidence.
 
----
+## Instagram / Other Supported Surfaces
 
-### Twitter/X
+Use visual-first, concise, educational, narrative, or promotional formats as appropriate to the established objective. Carousels, reels, stories, and static posts are options, not automatic requirements.
 
-Twitter reaches engineers, builders, founders. They want technical depth, concrete details, and practitioner credibility.
+## Content Transformation
 
-**Brand Twitter:**
-- Lead with the most surprising or concrete fact
-- Thread format (4 to 6 posts) for substantial content; single post for simple announcements
-- Post 1: Hook with sharpest insight or number
-- Posts 2 to N: One idea per post, build the argument
-- Final post: Link with minimal framing
-- Each post: Under 280 characters
-- Use line breaks for lists within posts
-- One emoji max per thread, only if it adds signal
+Preserve the source's substantive truth.
 
-**Personal Twitter:**
-- Lead with "I built" / "I learned" / "Here is what happened when"
-- Thread format for substantial content
-- Include technical details that demonstrate practitioner credibility
-- Share what went wrong or what surprised you
-- Disclose affiliations when relevant
-- Each post: Under 280 characters
-- Structure: Personal hook → Technical details → Insight → Link
+Extract when available:
+- supported evidence
+- genuine customer language
+- verified business implications
+- relevant product mechanism
+- actual personal experience
+- approved proof and disclosure
 
----
+Do not remove meaningful uncertainty solely to increase confidence or persuasion.
 
-## Audience Assumptions
+## Creative Patterns
 
-- Assume expert audience. Use acronyms without spelling them out (MFA, FIDO, NHI, EDR, SIEM, CSPM).
-- Vary openers across posts. If generating multiple posts, do not start them the same way.
+Possible patterns include:
+- observation → implication → takeaway
+- problem → insight → action
+- evidence/proof → interpretation
+- personal experience → lesson
+- contrast → explanation
 
----
+These are patterns, not formulas. Choose based on audience, objective, evidence, and platform.
 
-## Content Transformation Rules
+## Formatting Rules
 
-### What to extract from source
+Maintain applicable brand/platform requirements and established brand conventions.
 
-| Element | Use in social |
-|---------|---------------|
-| Concrete numbers | Lead with these. "30 seconds" beats "faster." |
-| Personal narrative | Personal posts only. Preserve "I" voice. |
-| Technical architecture | Twitter threads. Break into discrete facts. |
-| Business implications | LinkedIn. Frame as risk, cost, or strategic value. |
-| Surprising insights | Hooks for all channels. |
-| Affiliation/disclosure | Personal posts. Explicit "Full disclosure" statement. |
+Specific beats vague. Evidence beats invented precision. Clarity beats formula.
 
-### What to cut
+Avoid:
+- unsupported hype
+- fear-mongering
+- fake urgency
+- fabricated proof
+- generic engagement bait
+- claims of guaranteed performance
 
-- Background context (social readers skim)
-- Hedging language ("we believe", "it is possible that")
-- Section headers (flatten into narrative)
-- Long code blocks (summarize or reference)
-- Repetition
+## Engagement
 
----
+Engagement can be useful as a leading or diagnostic signal, but it is not automatically the business outcome. Optimize for the strategic objective when one exists.
 
-## Formatting Rules (All Channels)
-
-- No dashes. Rewrite sentences that require them.
-- No passive voice.
-- No buzzwords (robust, seamless, transformative, game-changer, revolutionary, cutting-edge, leverage).
-- No soft intros ("In today's world", "As we all know").
-- No dramatic openings ("Passwords are dead", "Everything is broken").
-- No fear-mongering ("catastrophic", "wide open").
-- No formulaic structures ("It wasn't just X, it was Y").
-- No rhetorical questions at the end.
-- No transition word chains (moreover, furthermore, additionally).
-- Specific beats vague. "30 seconds" not "much faster."
-
----
+A response invitation should be relevant to the content and intended journey stage, not added only to increase comments.
 
 ## Output Format
 
-### For LinkedIn (single post)
+### Strategic Context
+- Objective
+- Audience
+- Journey stage
+- Channel role
+- Message direction
+- Evidence/confidence
 
-```
-## [Brand/Personal] LinkedIn
+### Post
+- Platform
+- Account type
+- Hook
+- Full post
+- Visual concept when relevant
+- CTA / next action
+- Claims/proof used and evidence status
 
-[Post content]
+### Test Notes
+Only include format/timing guidance when useful, and label unsupported predictions as hypotheses or benchmarks.
 
----
-Character count: [X]
-```
+## Quality Gate
 
-### For Twitter (thread)
+Before delivery:
+- [ ] Strategic objective is preserved when supplied.
+- [ ] Audience is not inferred from platform stereotype.
+- [ ] Claims and numbers are supported.
+- [ ] Personal experience/affiliation is genuine.
+- [ ] Competitor/customer claims are not invented.
+- [ ] Platform guidance is not presented as a universal performance law.
+- [ ] Engagement is not substituted for the business outcome.
+- [ ] CTA matches the intended next action.
+- [ ] New strategic conflict is surfaced rather than hidden.
 
-```
-## [Brand/Personal] Twitter/X
+## LinkedIn Carousel
 
-**Post 1 of N**
-[Content]
-[Character count: X]
-
-**Post 2 of N**
-[Content]
-[Character count: X]
-
-...
-```
-
----
-
-## Review Checklist (Self-Check Before Delivery)
-
-Before delivering, verify:
-
-- [ ] No dashes
-- [ ] No passive voice
-- [ ] No banned words or phrases
-- [ ] No rhetorical questions at end
-- [ ] LinkedIn: 150+ words (brand) or 200+ words (personal)
-- [ ] Twitter: Each post under 280 characters
-- [ ] Personal posts use first person
-- [ ] Affiliations disclosed (if applicable)
-- [ ] Concrete numbers in hooks where available
-- [ ] Exactly one link placement per post/thread (Twitter: in final post; LinkedIn: "Link in comments" CTA, never a direct URL in the post body)
-
----
-
-## LinkedIn Carousel Prompt
-
-After generating any LinkedIn post (brand or personal), ask the user:
-
-> "Want me to generate a LinkedIn carousel to go with this post?"
-
-If yes, invoke the `/image` skill targeting LinkedIn carousel format. If `docs/inputs-local/carousel_style_ceros.md` exists, use it as the style reference. Otherwise fall back to `docs/inputs/brand_guidelines.md`.
-
----
-
-## Adaptation Notes
-
-- If source has no personal narrative and user requests personal posts, flag that author input is needed
-- If source has no concrete numbers, flag as a gap
-- If author has no affiliation to disclose, omit disclosure
-- For shallow source content, use single post instead of weak thread
+Only suggest or create a carousel when it supports the established objective or the user requests it. A carousel is an execution format, not a default next step.
