@@ -62,6 +62,23 @@ INCOMING REQUEST
     → Otherwise infer the appropriate work level from the request
 ```
 
+## Governance Rules Before Specialist Routing
+
+Strategic routing is not sufficient by itself. Before assigning a specialist, identify the governance boundaries relevant to the work and preserve them through the handoff.
+
+Use these shared rules when applicable:
+
+- `strategic-intelligence` — executive diagnosis and decision boundary
+- `specialist-evidence-and-decision-boundary` — evidence discipline and specialist authority
+- `measurement-and-learning-loop` — KPI, attribution, experimentation, and learning discipline
+- `sales-conversion-decision-boundary` — funnel, qualification, follow-up, sales, conversion, and commercial-economics discipline
+- `content-planning-decision-boundary` — content role, cadence, ratios, and channel-choice discipline
+- `customer-evidence-and-voc` — customer evidence and Voice of Customer discipline
+- `positioning-claims-decision-boundary` — positioning, claims, competitor evidence, and message consistency
+- `brand-voice-positioning-governance` — positioning → messaging → voice → execution boundary
+
+Do not treat these rules as separate tasks that all need to be "run." They are constraints on reasoning and handoffs. Apply only the relevant ones.
+
 ## Strategic Intelligence Routing Rule
 
 `strategic-intelligence` is the executive diagnostic layer, not another generic specialist. It must be used before specialist routing whenever the user is asking for a decision, diagnosis, plan, audit, prioritization, or cross-functional recommendation.
@@ -69,6 +86,26 @@ INCOMING REQUEST
 The orchestrator must preserve the strategic-intelligence output and pass its conclusions, evidence gaps, assumptions, priorities, and selected workstreams to downstream specialists. Specialists must not restart the entire strategic analysis unless new evidence requires it.
 
 The orchestrator must NOT force all available specialists into a workflow. Use the minimum set of specialists needed to answer the actual business problem.
+
+### Structured Handoff Requirement
+
+For strategic work, downstream specialists should receive the structured handoff defined by `schemas/strategic-diagnosis.json.template` whenever applicable.
+
+At minimum, preserve:
+
+- business objective;
+- decision required;
+- scope and constraints;
+- evidence status and research gaps;
+- assumptions and their status;
+- diagnosis/root causes/opportunities;
+- relevant customer, market, competitive, offer, brand, and channel context;
+- selected priorities;
+- specialist job-to-be-done;
+- measurement intent;
+- unresolved risks/unknowns.
+
+If a specialist discovers evidence that materially changes the diagnosis, audience, offer, positioning, channel role, economics, or business priority, return the finding to `strategic-intelligence` instead of silently changing the strategic direction downstream.
 
 ## What You Read
 
@@ -108,6 +145,7 @@ When an agent finishes, automatically evaluate whether the next stage is justifi
 | Strategic Intelligence → strategic diagnosis | Priorities + workstreams ready | Yes → selected specialist(s) only |
 | Strategist → creative-brief.json | Brief ready | Yes → Copywriter when execution is required |
 | Copywriter → finished copy | Copy ready | Yes → reviewer / recursive evaluation when required |
+| Measurement / sales specialist → material strategic finding | New evidence changes diagnosis | Yes → strategic-intelligence |
 
 ### Implicit Intent Detection
 When the user says something vague, infer the appropriate level from the desired outcome rather than relying on keywords alone:
@@ -119,6 +157,7 @@ When the user says something vague, infer the appropriate level from the desired
 | "What are competitors doing?" | MOS-Researcher for a defined intelligence report; strategic-intelligence if the user asks what to do with the findings |
 | "We need content for next week" | Content planning / copywriting unless the user is asking for the underlying strategy |
 | "How did [campaign] do?" | Load campaign-history.md and analyze results; escalate to strategic-intelligence if diagnosis or corrective strategy is requested |
+| "Leads are bad" / "closing is down" | strategic-intelligence → funnel/sales evidence → only the specialist(s) required by the diagnosed bottleneck |
 
 ### Memory Check Before Every Routing
 Before sending to any agent, load when relevant:
@@ -138,6 +177,7 @@ Agent: [Agent or skill]
 Reason: [1 sentence — why this layer/agent]
 Input: [What the agent needs to start]
 Evidence status: [Known / Research required / Critical unknowns]
+Governance: [Relevant decision/evidence/measurement/sales/content/positioning boundaries]
 Next step after completion: [What happens with the output]
 ```
 
