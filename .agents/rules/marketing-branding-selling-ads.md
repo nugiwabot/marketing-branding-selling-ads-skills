@@ -37,41 +37,59 @@ For narrow execution requests where the strategic direction is already known (fo
 
 ---
 
+## 🔗 Structured Handoff Contract
+
+For broad strategic work, the structured output defined in `schemas/strategic-diagnosis.json.template` is the canonical machine-readable handoff from Strategic Intelligence to downstream specialists.
+
+A downstream specialist MUST, when a structured diagnosis is available:
+1. Confirm the handoff `status` is appropriate for specialist consumption, normally `ready_for_handoff`.
+2. Consume the existing business objective, decision, evidence map, assumptions, diagnosis, priorities, channel/media role, and specialist job-to-be-done instead of reconstructing them from scratch.
+3. Treat `strategic-intelligence` as the source of truth for strategic decisions unless new evidence materially contradicts it.
+4. Preserve evidence classifications and distinguish facts from observations, inferences, hypotheses, and benchmarks.
+5. State material conflicts or missing inputs rather than silently changing the diagnosis.
+6. Return material new evidence or changed assumptions to Strategic Intelligence when they could alter the strategic decision.
+
+If no structured diagnosis is available, the specialist may use the applicable governance rule and available context, but must not pretend that an unverified strategic decision is validated.
+
+The human-readable strategic synthesis may be adaptive; the structured handoff must remain complete enough for routing and execution.
+
+---
+
 ## 🎯 Mandatory Global Skill Routing
 
 After strategic diagnosis when applicable, the agent MUST proactively reference and apply only the corresponding specialist skills from the `skills/` directory that are relevant to the task. For narrow execution requests, direct specialist routing remains allowed when strategic direction is already known.
 
 ### 1. Paid Ads & Campaign Automation
-- **Multi-Platform Ad Automation**: Activate `multi-platform-ads-automation` when planning, auditing, validating, or automating campaigns across **Google Ads** (PMax, Demand Gen, VBB, Consent Mode v2), **Meta Ads** (Advantage+, CAPI, Creative is Targeting), **TikTok Ads** (Smart+, Symphony AI, 3-sec Hook Rate), and **LinkedIn Ads** (Predictive Audiences, ABM, Buying Committee).
+- **Multi-Platform Ad Automation**: Activate `multi-platform-ads-automation` when planning, auditing, validating, or automating campaigns across **Google Ads**, **Meta Ads**, **TikTok Ads**, and **LinkedIn Ads**. Platform-specific features are implementation options, not automatic strategic priorities.
 - **Ad Copywriting**: Activate `ads` for creating multi-variant ad headlines, descriptions, and creative matrices.
-- **Account Health & Auditing**: Activate `ads` / ad audit checklists to diagnose ad fatigue, CPA/ROAS decay, and budget reallocation.
+- **Account Health & Auditing**: Activate `ads-auditor` / applicable ad audit checklists to diagnose ad fatigue, CPA/ROAS decay, and budget allocation issues.
 
 ### 2. Branding & Positioning
-- **Positioning & Strategy**: Activate `messaging-positioning` and `messaging-positioning-workshop` for April Dunford (*Obviously Awesome*) frameworks.
-- **Competitive Differentiation**: Activate `positioning-map` to generate 2x2 competitive positioning matrices.
-- **Voice of Customer (VOC)**: Activate `customer-language-bank` to extract verbatim buyer phrases and customer vocabulary.
-- **Claim & Consistency Verification**: Activate `claim-check` and `message-consistency-check` to substantiate marketing claims and ensure multi-channel consistency.
+- **Positioning & Strategy**: Activate `messaging-positioning` and `messaging-positioning-workshop` when the diagnosed problem requires positioning or messaging work.
+- **Competitive Differentiation**: Activate `positioning-map` when competitive positioning analysis is required.
+- **Voice of Customer (VOC)**: Activate `customer-language-bank` when customer-language evidence is required.
+- **Claim & Consistency Verification**: Activate `claim-check` and `message-consistency-check` when claims or cross-surface consistency require verification.
 
 ### 3. Marketing Strategy & Growth
-- **Go-To-Market (GTM)**: Activate `go-to-market` for product launches, tiering, channel strategies, and launch checklists.
-- **Campaign Briefs**: Activate `campaign-brief` for structured creative briefs (audiences, angles, deliverables, budgets).
-- **Customer & Market Research**: Activate `customer-research` (JTBD framework) and `competitive-intelligence` (battlecards, kill points).
-- **Win/Loss Analysis**: Activate `win-loss-reasons` to analyze deal closures, CRM notes, and conversion roadblocks.
-- **Editorial & Content Planning**: Activate `editorial-calendar` for rolling 4-week / 3-month content roadmaps.
-- **Viral & Growth Playbooks**: Activate `viral-launch-playbook` and `producthunt-launch`.
+- **Go-To-Market (GTM)**: Activate `go-to-market` when the diagnosis indicates a GTM decision is required.
+- **Campaign Briefs**: Activate `campaign-brief` when a campaign is strategically justified and needs a structured brief.
+- **Customer & Market Research**: Activate `customer-research` and `competitive-intelligence` when research gaps require those specialists.
+- **Win/Loss Analysis**: Activate `win-loss-reasons` when deal evidence is relevant.
+- **Editorial & Content Planning**: Activate `editorial-calendar` when content planning is a diagnosed workstream.
+- **Viral & Growth Playbooks**: Activate `viral-launch-playbook` or `producthunt-launch` only when the strategic diagnosis supports those interventions.
 
 ### 4. Content Creation & High-Conversion Copywriting
-- **Conversion Copywriting**: Activate `copywriting` (PAS, AIDA, 4Cs, direct response frameworks, hook banks).
-- **SEO & AEO Long-Form Content**: Activate `blog` for SEO & Answer Engine Optimization with Schema JSON-LD.
-- **Social Media Content**: Activate `social-posts` and `social-content` for LinkedIn, X/Twitter, Instagram, and TikTok content creation.
-- **Email Marketing**: Activate `email` and `email-sequence` for nurture drips, cold outreach, onboarding, and win-back flows.
-- **Visual Asset Generation**: Activate `image` for multi-tier visual prompts and creative specifications.
+- **Conversion Copywriting**: Activate `copywriting` when the diagnosed workstream requires conversion copy.
+- **SEO & AEO Long-Form Content**: Activate `blog` when search content is strategically relevant.
+- **Social Media Content**: Activate `social-posts` and `social-content` when social content is a relevant execution layer.
+- **Email Marketing**: Activate `email` and `email-sequence` when lifecycle or communication needs justify them.
+- **Visual Asset Generation**: Activate `image` when visual production is required.
 
 ### 5. Selling, Sales Enablement & Monetization
-- **Sales Presentations**: Activate `sales-deck` for B2B narrative slide structures and PPTX generation.
-- **Objection Handling**: Activate `objection-library` for real-time sales rebuttal scripts (price, timing, trust).
-- **Pricing & Packaging**: Activate `pricing-packaging` for pricing tiers, value metrics, and monetization optimization.
-- **Asset Review & QA**: Activate `claim-check` / QA verification before publishing marketing collateral.
+- **Sales Presentations**: Activate `sales-deck` when the sales narrative requires a deck.
+- **Objection Handling**: Activate `objection-library` when buyer/deal evidence indicates objection handling is relevant.
+- **Pricing & Packaging**: Activate `pricing-packaging` when pricing/packaging is a diagnosed decision.
+- **Asset Review & QA**: Activate `claim-check` / QA verification before publishing or shipping material when appropriate.
 
 ---
 
