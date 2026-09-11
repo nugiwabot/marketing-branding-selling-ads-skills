@@ -1,140 +1,232 @@
-# 🚀 Marketing Branding Selling Ads Skills: Unified AI Suite
+# 🚀 Marketing Branding Selling Ads Skills — Strategic Marketing AI OS
 
-> **All-In-One AI Growth Engine** yang menggabungkan framework marketing AI kelas dunia menjadi satu sistem komprehensif untuk kebutuhan **Branding**, **Marketing Strategy & Growth**, **Content & Copywriting**, **Selling & Conversion**, serta **Paid Ads Automation** (termasuk akselerasi industri properti, real estate, rukos, B2B, dan E-commerce).
+> **Evidence-driven AI Strategic Marketing OS** untuk membantu diagnosis bisnis, riset market/customer/competitor, branding, marketing, selling, paid acquisition, execution, measurement, dan learning.
 
----
-
-## 🏛️ Sumber & Fondasi Framework
-
-Repositori ini merupakan hasil kurasi dan integrasi dari berbagai framework terdepan:
-
-1. **[ericosiu/marketing-os-starter](https://github.com/ericosiu/marketing-os-starter)** *(Eric Siu - Single Grain)*
-   - Sistem Operasi Agensi AI: 4 Agen Terspesialisasi (Orchestrator, Researcher, Strategist, Copywriter), Memory Architecture, formula hook konversi, dan structured handoffs.
-2. **[pmalliance/product-marketing-skills](https://github.com/pmalliance/product-marketing-skills)** *(Product Marketing Alliance)*
-   - Keahlian Product Marketing tingkat lanjut: Positioning April Dunford (*Obviously Awesome*), Segmentation-Targeting-Positioning (STP), Go-To-Market (GTM), Voice of Customer (VOC), Battlecards, dan Pricing Packaging.
-3. **[j1ngg/tech-marketing-framework](https://github.com/j1ngg/tech-marketing-framework)** *(Jing / Tech Marketing Engine)*
-   - Eksekusi konten B2B/B2C, SEO & AEO (AI Engine Optimization), Paid Ads (Meta, Google, LinkedIn), Sales Decks otomatis via python-pptx, Product Hunt launch sprint, dan Autoresearch (optimasi prompt otomatis Karpathy).
-4. **2026 Multi-Platform Ads Automation Engine**
-   - Arsitektur operasional AI, guardrails anti-banned, matriks limitasi teknis, dan integrasi MCP/REST API untuk Google Ads (PMax, VBB), Meta Ads (Advantage+, CAPI), TikTok Ads (Smart+, Symphony AI), dan LinkedIn Ads (ABM, Buying Committee).
+Repositori ini bukan sekadar kumpulan prompt. Arsitekturnya menempatkan **Strategic Intelligence** sebagai decision layer, specialist skills sebagai domain executors, dan measurement/learning sebagai feedback loop.
 
 ---
 
-## 📑 Direktori 31 Skills Siap Pakai
-
-Semua skill tersedia dalam format standar `SKILL.md` dan didukung penuh oleh **Antigravity IDE**, **Claude Code**, dan **Codex**.
-
-### 🎨 1. Branding & Positioning
-| Skill | Deskripsi & Kegunaan |
-| :--- | :--- |
-| **messaging-positioning** | Framework positioning & messaging mendalam berbasis April Dunford (*Obviously Awesome*). |
-| **messaging-positioning-workshop** | Workshop interaktif Socratic Q&A untuk memandu tim merumuskan positioning & diferensiasi brand. |
-| **positioning-map** | Generator 2x2 competitive positioning maps untuk menemukan whitespace pasar & diferensiasi. |
-| **brand-voice** | Panduan voice & tone brand, vocabulary bank, do's & don'ts karakter komunikasi. |
-| **customer-language-bank** | Bank repositori Voice of Customer (VOC) untuk menangkap frasa autentik calon pembeli. |
-| **claim-check** | Audit keabsahan klaim pemasaran, verifikasi bukti empiris, dan penguatan trust/social proof. |
-| **message-consistency-check** | Audit konsistensi pesan brand di seluruh channel pemasaran (Web, Ads, Sosmed, Email). |
-| **how-they-market** | Analisis intelijen kompetitor: membongkar strategi brand, positioning, funnel, dan konten pesaing. |
-
-### 🚀 2. Marketing Strategy & Growth
-| Skill | Deskripsi & Kegunaan |
-| :--- | :--- |
-| **go-to-market** | Playbook Go-To-Market (GTM) komprehensif, peluncuran produk baru, tiering, dan channel alignment. |
-| **campaign-brief** | Pembuat Creative & Campaign Brief terstruktur (KPI, target persona, angle, anggaran, deliverables). |
-| **customer-research** | Riset pelanggan mendalam berbasis Jobs-To-Be-Done (JTBD), interview synthesis, dan pain/gain matrix. |
-| **competitive-intelligence** | Penyusunan Battlecards kompetitif, matriks fitur pesaing, dan kill points penjualan. |
-| **win-loss-reasons** | Analisis menang-kalah transaksi (win/loss reviews) untuk memperbaiki penawaran dan produk. |
-| **editorial-calendar** | Perencanaan kalender konten dengan rasio 70/20/10 (Educational, Product, Reactive content). |
-| **producthunt-launch** | Panduan sprint peluncuran Product Hunt 6 minggu (tagline, maker comment, vote velocity, timeline). |
-| **viral-launch-playbook** | Taktik peluncuran produk viral, waitlist loops, hype building, dan referral multipliers. |
-| **launch-roundup** | Pipeline otomatis rilis fitur: Ringkasan changelog → Pengumuman Slack → Blog post → Postingan LinkedIn & Karusel. |
-| **autoresearch** | Mesin optimasi prompt & skill otonom berbasis metodologi Andrej Karpathy. |
-
-### ✍️ 3. Content Creation & Conversion Copywriting
-| Skill | Deskripsi & Kegunaan |
-| :--- | :--- |
-| **copywriting** | Mesin copywriting konversi tinggi karya Eric Siu (Hooks, Direct Response, PAS/AIDA/4C frameworks). |
-| **blog** | Generator artikel blog mendalam standar SEO & AEO (Answer Engine Optimization) lengkap dengan Schema JSON-LD. |
-| **social-posts** | Penulisan pos media sosial berkinerja tinggi untuk LinkedIn, X/Twitter, Instagram, dan TikTok. |
-| **social-content** | Batch generator konten media sosial dan hook bank untuk menjaga konsistensi posting harian. |
-| **email** | Generator newsletter, email pengumuman fitur, update produk, dan konten editorial email. |
-| **email-sequence** | Perancang sequence email otomatis (Cold outreach, Nurture drip, Onboarding, Win-back). |
-| **image** | Generator prompt visual AI bertingkat untuk header blog, carousel, banner, dan iklan. |
-
-### 💼 4. Selling, Sales Enablement & Paid Acquisition
-| Skill | Deskripsi & Kegunaan |
-| :--- | :--- |
-| **multi-platform-ads-automation** | **(NEW 2026)** Otak operasional AI & otomatisasi kampanye ads 4 platform (Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads), decision trees bidding, alokasi budget, pre-flight JSON schemas, anti-banned guardrails, dan MCP Server tools. |
-| **ads** | Copywriting iklan berbayar multi-platform (Meta Ads, Google Search/PMax, LinkedIn Ads, TikTok Ads). |
-| **ads-auditor** | Audit performa akun iklan digital, deteksi ad fatigue, perhitungan CPA/ROAS, dan rekomendasi perbaikan. |
-| **sales-deck** | Generator slide presentasi sales B2B otomatis ke format PPTX (python-pptx) sesuai identitas brand. |
-| **objection-library** | Bank penanganan keberatan sales (*objection handling*), skrip tanggapan harga, trust, dan timing. |
-| **pricing-packaging** | Strategi penetapan harga, tiering paket, value metric alignment, dan optimasi monetisasi. |
-| **asset-reviewer** | QA gatekeeper sebelum materi publish: cek akurasi data, nada bahasa, kepatuhan, dan daya konversi. |
-| **skill-builder** | Meta-skill untuk mendesain, menguji, dan membuat skill AI baru sesuai kebutuhan spesifik bisnis Anda. |
-
----
-
-## 🤖 Tim Agen AI Khusus (Multi-Agent Team)
-
-Dalam folder `.agents/` dan `.claude/agents/`, tersedia agen spesialis:
-
-- **mos-orchestrator**: Pemimpin tim marketing AI. Menganalisis permintaan, memilih agen/skill yang tepat, dan memastikan kualitas output.
-- **mos-researcher**: Spesialis riset audiens, ekstraksi Voice-of-Customer, tren industri, dan intelijen kompetitor.
-- **mos-strategist**: Arsitek strategi GTM, positioning, angle kampanye, dan penetapan KPI pemasaran.
-- **mos-copywriter**: Copywriter eksekutor spesialis direct-response, headline hook, dan naskah iklan persuasif.
-- **ads-auditor**: Analis kesehatan kampanye iklan berbayar dan optimasi biaya akuisisi (CAC/CPL).
-- **asset-reviewer**: Editor ketat yang memastikan setiap materi siap tayang tanpa cacat logika atau klaim lemah.
-- **how-they-market**: Agen riset yang membongkar strategi pemasaran kompetitor secara real-time.
-
----
-
-## 🛠️ Cara Penggunaan
-
-### 1. Di Google Antigravity IDE
-Skill otomatis terbaca dari folder `.agents/skills/` atau `skills/`. Anda dapat langsung memanggil skill terkait dalam percakapan atau membiarkan asisten mengaktifkannya secara otomatis.
-
-### 2. Di Claude Code
-Skill dan agen dapat dipanggil langsung menggunakan slash command:
-```bash
-/messaging-positioning
-/copywriting
-/multi-platform-ads-automation
-/ads
-/sales-deck
-/go-to-market
-```
-
-### 3. Di Cursor / Codex
-Akses aturan dan framework melalui `AGENTS.md` dan folder `.agents/skills/`.
-
----
-
-## 📁 Struktur Repositori
+## 🧠 Core Architecture
 
 ```text
-├── .agents/                    # Kompatibilitas Antigravity / Cursor / Codex
-│   ├── skills/                 # 31 Direktori skill mandiri (SKILL.md)
-│   └── product-marketing-context.md
-├── .claude/                    # Kompatibilitas Claude Code
-│   ├── agents/                 # Definisi tim agen multi-role
-│   ├── rules/                  # Panduan penulisan & proactive routing
-│   └── skills/                 # Koleksi skill Claude Code
-├── agents/                     # Definisi agen mandiri untuk referensi cepat
-├── brands/                     # Template konteks brand & profil agensi/klien
-├── docs/                       # Input panduan brand, persona, & produk
-├── memory/                     # Memori persisten (Brand voice, wisdom, history)
-├── schemas/                    # Template JSON schema (Audience, Brief, Report)
-├── examples/                   # Contoh implementasi sebelum & sesudah
-├── AGENTS.md                   # Panduan orkestrasi multi-agen
-├── CLAUDE.md                   # Panduan master instruksi & routing
-└── README.md                   # Dokumentasi utama repositori
+Business Problem / Goal
+        ↓
+Orchestrator
+        ↓
+Strategic Intelligence
+        ↓
+Research + Evidence
+        ↓
+Diagnosis + Priorities + Decisions
+        ↓
+Structured Handoff
+        ↓
+Selected Specialist Skills
+        ↓
+Execution / QA
+        ↓
+Measurement
+        ↓
+Learning
+        ↓
+Strategic Intelligence when the diagnosis changes
+```
+
+### Prinsip utama
+
+- **Strategic Intelligence First** untuk request yang broad, ambigu, lintas fungsi, audit, planning, growth, business, branding, marketing, sales, channel/media, atau SPV-level.
+- **Research before unsupported conclusions.** Channel, audience, competitor behavior, pricing, positioning, dan benchmark tidak boleh diasumsikan hanya karena populer.
+- **Minimum necessary specialists.** Tidak semua skill dipanggil dalam setiap task.
+- **Specialist ≠ Strategy Owner.** Specialist mengerjakan domain job-to-be-done dalam batas diagnosis.
+- **Evidence ≠ certainty.** FACT, OBSERVATION, INFERENCE, HYPOTHESIS, BENCHMARK, dan RECOMMENDATION harus tetap dibedakan.
+- **Learning feeds strategy.** Hasil campaign, ads, sales, win/loss, QA, dan eksperimen dapat mengubah diagnosis.
+
+---
+
+## 🏛️ Framework Foundations
+
+Repositori ini mengkurasi dan mengintegrasikan berbagai pendekatan marketing dan product marketing, termasuk:
+
+1. **ericosiu/marketing-os-starter** — fondasi multi-agent marketing OS, orchestration, memory, dan handoff.
+2. **pmalliance/product-marketing-skills** — product marketing, positioning *Obviously Awesome*, STP, GTM, VOC, competitive intelligence, dan pricing/packaging.
+3. **j1ngg/tech-marketing-framework** — content, SEO/AEO, paid media, sales enablement, launch workflows, dan autoresearch.
+4. **Custom governance layer** — strategic diagnosis, evidence discipline, structured handoffs, specialist boundaries, measurement/causality guardrails, dan feedback loops.
+
+Framework dipakai sebagai **alat berpikir**, bukan sebagai formula universal yang harus selalu diterapkan.
+
+---
+
+## 📑 Skill Domains
+
+### 🎨 1. Branding & Positioning
+| Skill | Deskripsi |
+| :--- | :--- |
+| **messaging-positioning** | Positioning & messaging berbasis *Obviously Awesome* dengan evidence dan validation. |
+| **messaging-positioning-workshop** | Workshop terstruktur untuk merumuskan positioning/differentiation. |
+| **positioning-map** | Competitive positioning visualization dan whitespace analysis berbasis evidence. |
+| **brand-voice** | Voice, tone, vocabulary, dan brand communication guidance. |
+| **customer-language-bank** | Ekstraksi bahasa customer/VOC dari sumber yang tersedia. |
+| **claim-check** | Verifikasi klaim, proof, dan traceability. |
+| **message-consistency-check** | QA alignment pesan antar-surface dan journey stage. |
+| **how-they-market** | Competitive marketing intelligence dan channel/funnel observation. |
+
+### 🚀 2. Marketing Strategy & Growth
+| Skill | Deskripsi |
+| :--- | :--- |
+| **go-to-market** | GTM architecture, market entry/expansion, offer/channel alignment. |
+| **campaign-brief** | Structured campaign/creative brief setelah strategic direction tersedia. |
+| **customer-research** | Customer/JTBD research dan synthesis. |
+| **competitive-intelligence** | Competitive offers, positioning, proof, distribution, dan battlecard intelligence. |
+| **win-loss-reasons** | Synthesis bukti deal won/lost/no-decision. |
+| **editorial-calendar** | Content planning berdasarkan objective, audience, role, dan capacity. |
+| **producthunt-launch** | Product Hunt launch execution guidance; taktik dan timing tetap context-dependent. |
+| **viral-launch-playbook** | Launch/experiment ideas untuk referral, distribution, dan attention; bukan jaminan virality. |
+| **launch-roundup** | Rilis fitur menjadi paket komunikasi/distribution assets. |
+| **autoresearch** | Controlled skill/prompt experimentation dan learning loop. |
+
+### ✍️ 3. Content & Conversion
+| Skill | Deskripsi |
+| :--- | :--- |
+| **copywriting** | Conversion copy execution berbasis strategi, offer, audience, dan evidence. |
+| **blog** | Long-form SEO/AEO content dengan research dan claim discipline. |
+| **social-posts** | Platform-specific social copy. |
+| **social-content** | Social content planning/generation yang terikat pada strategic objective. |
+| **email** | Newsletter/editorial/product communication. |
+| **email-sequence** | Lifecycle/nurture/sales sequence berdasarkan journey dan objective. |
+| **image** | Visual prompt/asset specifications untuk kebutuhan komunikasi. |
+
+### 💼 4. Selling, Paid Acquisition & QA
+| Skill | Deskripsi |
+| :--- | :--- |
+| **multi-platform-ads-automation** | Paid-media planning/validation/automation framework dengan platform-specific guardrails. |
+| **ads** | Paid ad creative execution untuk platform yang relevan. |
+| **ads-auditor** | Paid-media performance audit, funnel diagnosis, dan optimization recommendations. |
+| **sales-deck** | B2B sales narrative dan deck structure. |
+| **objection-library** | Evidence-based objection analysis dan handling support. |
+| **pricing-packaging** | Pricing, packaging, value metric, dan monetization analysis. |
+| **asset-reviewer** | Evidence/message/brand/conversion QA sebelum publikasi atau eksekusi. |
+| **skill-builder** | Meta-skill untuk membuat dan menguji skill AI baru. |
+
+---
+
+## 🤖 Agent Architecture
+
+### `mos-orchestrator`
+Menilai work level, menentukan routing, menjaga handoff, dan memilih specialist minimum yang diperlukan.
+
+### `mos-researcher`
+Mengumpulkan evidence untuk market, customer, competitor, channel/media, VOC, dan conversion. Kesimpulan strategis final bukan kewenangannya. 
+
+### `mos-strategist`
+Mengubah diagnosis/evidence menjadi strategic priorities, GTM, positioning, messaging, offer, channel, campaign, dan execution direction sesuai kebutuhan.
+
+### `mos-copywriter`
+Menerjemahkan strategi dan source material menjadi copy/content assets.
+
+### `ads-auditor`
+Menganalisis paid-media performance dan mengeskalasi masalah upstream ketika akar masalah ternyata bukan iklan.
+
+### `asset-reviewer`
+Menjadi quality gate untuk evidence, positioning/message fit, brand, conversion friction, dan compliance.
+
+---
+
+## 🔗 Structured Handoff
+
+Broad strategic requests menghasilkan `schemas/strategic-diagnosis.json.template` sebagai machine-readable contract.
+
+Handoff membawa:
+
+- business objective dan decision;
+- known / unknown / assumptions;
+- evidence dan research gaps;
+- diagnosis, bottlenecks, tensions, opportunities;
+- customer/market implications;
+- competitive context;
+- channel/media role;
+- priorities;
+- specialist workstreams dan **job-to-be-done**;
+- measurement logic;
+- handoff controls.
+
+Lifecycle diagnosis:
+
+`draft → researching → diagnosed → ready_for_handoff → superseded`
+
+Specialist tidak boleh diam-diam mengganti diagnosis. Jika evidence baru mengubah strategic conclusion, temuan dikembalikan ke Strategic Intelligence.
+
+---
+
+## ⚙️ Governance Layer
+
+Cross-cutting rules berada di `.agents/rules/` dan berfungsi sebagai **reasoning constraints**:
+
+- strategic routing & specialist decision boundary;
+- customer evidence / VOC;
+- positioning, claims & message consistency;
+- brand voice / positioning;
+- content planning;
+- sales & conversion;
+- measurement, attribution, experimentation & learning.
+
+Tujuannya menghindari pola seperti:
+
+> “CTR turun → ganti creative.”
+
+ketika masalah sebenarnya mungkin offer, audience, positioning, landing page, sales follow-up, measurement, atau channel fit.
+
+---
+
+## 🛠️ Usage
+
+### Google Antigravity / Claude Code / Codex
+
+Gunakan repository sebagai context dan skill library. Untuk request strategis, mulai dari Strategic Intelligence; untuk request narrow dengan direction yang sudah jelas, direct specialist execution tetap diperbolehkan.
+
+Contoh:
+
+```text
+/strategic-intelligence
+/messaging-positioning
+/customer-research
+/go-to-market
+/ads
+/ads-auditor
+/sales-deck
 ```
 
 ---
 
-## 📄 Lisensi & Kredit
+## 📁 Repository Structure
 
-Repositori ini disatukan dan dikurasi oleh **[nugiwabot](https://github.com/nugiwabot/marketing-branding-selling-ads-skills)** untuk keperluan akselerasi branding, marketing, selling, dan ads automation. Seluruh kredit metodologi dan fondasi awal ditujukan kepada:
-- **Eric Siu** ([marketing-os-starter](https://github.com/ericosiu/marketing-os-starter))
-- **Product Marketing Alliance** ([product-marketing-skills](https://github.com/pmalliance/product-marketing-skills))
-- **Jing** ([tech-marketing-framework](https://github.com/j1ngg/tech-marketing-framework))
+```text
+├── .agents/
+│   ├── rules/                 # Shared reasoning constraints
+│   ├── skills/                # Domain skills (SKILL.md)
+│   └── product-marketing-context.md
+├── .claude/
+│   ├── agents/                # Claude agent definitions
+│   ├── rules/                 # Claude-specific guidance
+│   └── skills/                # Claude skill collection
+├── agents/                    # Named specialist agent definitions
+├── brands/                    # Brand context/templates
+├── docs/                      # Product/brand/persona inputs
+├── memory/                    # Persistent marketing memory
+├── schemas/                   # Structured handoff templates
+├── examples/                  # Examples and evaluations
+├── AGENTS.md                  # Agent architecture and routing contract
+├── CLAUDE.md                  # Master operating rules
+└── README.md                  # Repository documentation
+```
+
+---
+
+## 📄 License & Credits
+
+Repositori ini dikurasi dan dikembangkan oleh **nugiwabot**. Fondasi awal dan metodologi yang dirujuk antara lain:
+
+- **Eric Siu** — [marketing-os-starter](https://github.com/ericosiu/marketing-os-starter)
+- **Product Marketing Alliance** — [product-marketing-skills](https://github.com/pmalliance/product-marketing-skills)
+- **Jing / Tech Marketing Engine** — [tech-marketing-framework](https://github.com/j1ngg/tech-marketing-framework)
+
+Framework dan sumber tetap tunduk pada lisensi, attribution, dan penggunaan yang berlaku dari sumber aslinya.
