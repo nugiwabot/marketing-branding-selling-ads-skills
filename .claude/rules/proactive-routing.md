@@ -2,67 +2,126 @@
 
 ## Purpose
 
-This file makes skills invoke AUTOMATICALLY based on intent detection. Claude should NEVER wait for a slash command when it can detect what the user needs.
+Automatically route marketing requests without forcing the user to know internal skill names. Routing should be **outcome-led and diagnosis-aware**, not a collection of keyword-triggered pipelines.
 
-## Golden Rule
+## Routing Hierarchy
 
-**If a user's request matches any pattern below, invoke the skill immediately. Do not ask "Would you like me to use /skill-name?" — just use it.**
+Use this order:
 
----
+1. **Detect the user's outcome / decision.**
+2. **Classify work level.**
+3. **For broad, ambiguous, cross-functional, audit, planning, growth, business, branding, marketing, channel/media, sales, or SPV-level work, route to `strategic-intelligence` first.**
+4. **For narrow execution with already-established strategic direction, route directly to the relevant specialist.**
+5. **After strategic diagnosis, select only the minimum specialist set required by the diagnosed workstream.**
+6. **Carry the structured diagnosis/handoff into specialist execution when available.**
 
-## Intent -> Skill Routing Table
+## Tier 1 — Direct Execution
 
-### Tier 1: High-Confidence Auto-Invoke
+These requests can bypass Strategic Intelligence **when the strategic direction is already known in context**:
 
-These patterns should ALWAYS trigger the skill without asking:
+| User Request | Specialist |
+|---|---|
+| write/rewrite a page, headline, ad copy | `/copywriting` |
+| write a defined email/newsletter | `/email` or `/email-sequence` |
+| create a defined LinkedIn/X/Instagram post | `/social-content` or `/social-posts` |
+| produce a blog from an established brief | `/blog` |
+| create a defined sales deck | `/sales-deck` |
+| create ad creative from an established campaign direction | `/ads` |
+| review an existing asset | `/asset-reviewer` / `/claim-check` |
 
-| User Says Something Like... | Invoke | Why |
-|----------------------------|--------|-----|
-| "write copy for [page]", "I need a landing page", "rewrite this page", "headline ideas" | `/copywriting` | Direct copy request |
-| "write emails for", "drip campaign", "welcome sequence", "nurture flow", "re-engage" | `/email-sequence` | Direct email request |
-| "LinkedIn post", "tweet this", "social calendar", "content for Instagram", "thread about" | `/social-content` | Direct social request |
-| "who are our competitors", "competitive landscape", "market analysis", "audience research" | `/research` | Direct research request |
-| "plan a campaign", "what should we say", "creative brief", "campaign for [product]" | `/campaign-brief` | Direct brief request |
+Do not infer a new business strategy from a narrow execution request unless the user asks for it or material evidence requires escalation.
 
-### Tier 2: Compound Intent (Multi-Skill Chains)
+## Tier 2 — Strategic / Diagnostic Entry
 
-When a request is bigger than one skill, chain them automatically:
+These patterns should route to `/strategic-intelligence` first:
 
-| User Says Something Like... | Chain | Flow |
-|----------------------------|-------|------|
-| "build me a campaign for [X]" | Research -> Brief -> Copy | Full pipeline |
-| "I need to promote [product]" | Research -> Brief -> Copy + Social | Full campaign |
-| "launch [product] next month" | Research -> Brief -> Copy + Email + Social | Launch pipeline |
-| "we need more leads from [channel]" | Research -> Brief -> skill for that channel | Channel-specific |
-| "our emails aren't working" | Research (audience) -> Email Sequence | Email optimization |
+- "How should we market this?"
+- "How do we get more customers/leads/sales?"
+- "What channels should we use?"
+- "Should we use Instagram/Google/Meta/TikTok/LinkedIn?"
+- "Audit this business/marketing/sales funnel."
+- "Why aren't our ads/content/sales working?"
+- "Build a marketing plan/GTM strategy."
+- "Position this brand/product."
+- "We need a campaign" when the audience, bottleneck, offer, channel role, or objective is not already established.
+- "We need more users" / "we need more leads" / "we need more revenue."
+- "What should the SPV/team prioritize?"
 
-**For compound requests:** Start with the first skill in the chain. After it completes, immediately proceed to the next without asking "should I continue?" — the user asked for the full thing.
+Strategic Intelligence decides whether research, positioning, GTM, content, paid media, sales, pricing, or another intervention is actually warranted.
 
-### Tier 3: Implicit Intent (Read Between the Lines)
+## Tier 3 — Compound Requests
 
-| User Says... | What They Really Need | Invoke |
-|-------------|---------------------|--------|
-| "[Product] needs more users" | Growth campaign | Research -> Brief -> multi-channel |
-| "this client is churning" | Retention campaign | Research -> Email Sequence |
-| "we're losing to [competitor]" | Competitive positioning | Research |
-| "we need content for next week" | Weekly content batch | Social Content |
+Do **not** use fixed chains such as `Research → Brief → Copy` automatically.
 
----
+Instead:
 
-## How to Handle Ambiguity
+`User outcome → Strategic Intelligence (when required) → Diagnosis → Evidence/Research → Selected specialists → Strategic synthesis → Execution → Measurement/Learning`
 
-If the request could map to multiple skills and you genuinely can't tell which one:
+A broad request to "promote X" does not prove that a campaign is the answer.
 
-1. **Don't ask "which skill should I use?"** — the user doesn't think in skills
-2. **Instead, ask about the OUTCOME**: "Are you trying to get more signups, improve existing conversion, or create content?"
-3. Based on the answer, route to the right skill silently
+A request for "more leads from channel X" does not prove channel X is the correct channel.
 
----
+A request to "fix ads" does not prove ads are the root cause.
 
-## Memory Check on Every Marketing Request
+## Specialist Routing Rules
 
-Before executing any marketing skill, quickly check:
-- `memory/marketing-os/brand-voice.md` — to maintain voice consistency
-- `memory/marketing-os/campaign-history.md` — to avoid repeating what failed
+After strategic diagnosis:
 
-This takes 2 seconds and prevents starting from scratch when prior work exists.
+| Diagnosed workstream | Relevant specialist(s) |
+|---|---|
+| Customer/VOC evidence | `/customer-research`, `/customer-language-bank` |
+| Competitive intelligence | `/competitive-intelligence`, `/how-they-market` |
+| Positioning / messaging | `/messaging-positioning`, `/positioning-map`, `/claim-check`, `/message-consistency-check` |
+| GTM / channel decision | `/go-to-market` plus only required channel specialists |
+| Campaign strategy | `/campaign-brief` |
+| Content strategy/planning | `/editorial-calendar`, `/blog`, `/social-content`, `/email` as required |
+| Paid media strategy/execution | `/multi-platform-ads-automation`, `/ads`, `/ads-auditor` as required |
+| Sales/conversion | `/sales-deck`, `/objection-library`, `/pricing-packaging`, `/win-loss-reasons` as required |
+| QA | `/asset-reviewer`, `/claim-check`, or other relevant verifier |
+
+Never invoke every available skill by default.
+
+## Ambiguity
+
+If the intent is ambiguous, ask about the **business outcome or decision**, not which skill to use.
+
+Good:
+> "Are you trying to increase qualified leads, improve conversion from existing leads, or decide where to invest marketing budget?"
+
+Avoid:
+> "Which skill should I use?"
+
+Do not ask for clarification when existing context already answers the question.
+
+## Structured Handoff
+
+When `schemas/strategic-diagnosis.json.template` is used, downstream specialists should consume the handoff rather than reconstruct strategy from scratch.
+
+A handoff should normally be in a state appropriate for specialist use, such as `ready_for_handoff`.
+
+Specialists must preserve:
+- objective
+- decision
+- diagnosis
+- evidence status
+- assumptions
+- priorities
+- channel/media role
+- job-to-be-done
+- measurement intent
+
+If specialist evidence materially changes the diagnosis, return the new evidence and implications to Strategic Intelligence.
+
+## Memory / Context
+
+Before marketing execution, inspect relevant existing context where available:
+- `memory/marketing-os/brand-voice.md`
+- `memory/marketing-os/campaign-history.md`
+- brand/product/customer context
+- prior strategy and measurement results
+
+Do not treat memory as proof of current market conditions when the claim is time-sensitive; verify current external facts when required.
+
+## Core Rule
+
+**Route by the decision the user needs, not by the keyword they happened to type.**
