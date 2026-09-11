@@ -1,4 +1,6 @@
 {
+  "schema_version": "1.1",
+  "status": "draft|researching|diagnosed|ready_for_handoff|superseded",
   "request": {
     "summary": "",
     "business_objective": "",
@@ -45,7 +47,8 @@
     "root_causes": [],
     "opportunities": [],
     "bottlenecks": [],
-    "strategic_tensions": []
+    "strategic_tensions": [],
+    "decision_implications": []
   },
   "customer_and_market": {
     "segments": [],
@@ -95,7 +98,9 @@
     "source_of_truth": "strategic-intelligence",
     "specialist_must_preserve_diagnosis": true,
     "specialist_must_flag_conflicts": true,
-    "return_to_strategy_if_new_evidence_changes_diagnosis": true
+    "return_to_strategy_if_new_evidence_changes_diagnosis": true,
+    "handoff_requires_status": "ready_for_handoff",
+    "specialist_may_not_silently_change_strategy": true
   },
   "measurement": {
     "business_outcomes": [],
