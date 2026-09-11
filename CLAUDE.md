@@ -50,6 +50,7 @@ Important boundaries include:
 - `framework-selection-and-strategic-synthesis.md` — decision-based framework selection, limitations, cross-framework coherence, and strategic synthesis
 - `pricing-monetization-governance.md` — pricing, packaging, value metric, discounting, segmentation, and monetization decision quality
 - `legal-compliance-risk-boundary.md` — legal/regulatory, privacy, claims, IP, platform policy, and reputational risk screening
+- `knowledge-memory-freshness.md` — provenance, freshness, historical-memory limits, and current-evidence precedence
 
 These rules do not override the strategic layer; they constrain how specialists reason and hand off evidence. If new evidence materially changes the strategic diagnosis, return to `/strategic-intelligence`.
 
