@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "status": "draft|researching|diagnosed|ready_for_handoff|superseded",
   "request": {
     "summary": "",
@@ -34,13 +34,18 @@
       "question": "",
       "why_it_matters": "",
       "priority": "high",
-      "sources_or_methods": []
+      "sources_or_methods": [],
+      "freshness_requirement": "",
+      "triangulation_requirement": "",
+      "minimum_sufficient_evidence": "",
+      "stopping_condition": ""
     }
   ],
   "frameworks_selected": [
     {
       "framework": "",
-      "purpose": ""
+      "purpose": "",
+      "limitations_or_fit_notes": ""
     }
   ],
   "diagnosis": {
@@ -66,12 +71,54 @@
     "positioning_implications": [],
     "offer_implications": []
   },
+  "operational_capability": {
+    "team_and_skills": [],
+    "capacity_constraints": [],
+    "systems_and_assets": [],
+    "delivery_constraints": [],
+    "dependencies": []
+  },
+  "commercial_economics": {
+    "revenue_drivers": [],
+    "margin_or_contribution_logic": [],
+    "acquisition_economics": [],
+    "customer_value_economics": [],
+    "known_inputs": [],
+    "missing_inputs": [],
+    "sensitivity_variables": []
+  },
+  "risk_and_external_factors": {
+    "market_or_external_risks": [],
+    "regulatory_or_legal_considerations": [],
+    "operational_risks": [],
+    "financial_risks": [],
+    "reputational_or_brand_risks": [],
+    "platform_or_channel_risks": []
+  },
   "channel_and_media": {
     "primary": [],
     "supporting": [],
     "experimental": [],
     "not_recommended": [],
     "selection_logic": []
+  },
+  "strategic_alternatives": [
+    {
+      "option": "",
+      "rationale": "",
+      "tradeoffs": [],
+      "what_must_be_true": [],
+      "evidence_confidence": "",
+      "reversibility": "",
+      "dependencies": []
+    }
+  ],
+  "validation_and_disconfirmation": {
+    "key_hypotheses": [],
+    "supporting_evidence": [],
+    "disconfirming_evidence_to_seek": [],
+    "lowest_cost_validation_tests": [],
+    "decision_gates": []
   },
   "priorities": [
     {
@@ -100,7 +147,8 @@
     "specialist_must_flag_conflicts": true,
     "return_to_strategy_if_new_evidence_changes_diagnosis": true,
     "handoff_requires_status": "ready_for_handoff",
-    "specialist_may_not_silently_change_strategy": true
+    "specialist_may_not_silently_change_strategy": true,
+    "strategic_completeness_scan_required_for_broad_requests": true
   },
   "measurement": {
     "business_outcomes": [],
