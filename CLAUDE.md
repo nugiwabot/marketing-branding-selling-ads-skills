@@ -47,6 +47,7 @@ Important boundaries include:
 - `positioning-claims-decision-boundary.md` — positioning, claims, competitor evidence, and message QA
 - `brand-voice-positioning-governance.md` — positioning → messaging → voice → execution
 - `strategic-completeness-and-decision-quality.md` — executive completeness across business model, market, customer, competition, offer/economics, operations/capability, risk, alternatives, research design, and decision quality
+- `framework-selection-and-strategic-synthesis.md` — decision-based framework selection, limitations, cross-framework coherence, and strategic synthesis
 
 These rules do not override the strategic layer; they constrain how specialists reason and hand off evidence. If new evidence materially changes the strategic diagnosis, return to `/strategic-intelligence`.
 
